@@ -1,0 +1,117 @@
+@import './core/constants';
+@import './core/mixins';
+
+// MY information css
+.information-section {
+  display: inline-block;
+  width: 49%;
+  height: 520px;
+  padding: 30px;
+  margin: 0;
+  border: 0;
+  color: white;
+  background: #314a74;
+  font-size: 15px;
+  position: relative;
+}
+
+.information-section-left {
+  @extend .information-section;
+  top: -315px;
+}
+
+.information-section-right {
+  @extend .information-section;
+  top: -5px;
+  left: -5px;
+  display: inline-block;
+  background: #bcc8dc;
+}
+
+.quick-id-header {
+  @extend .skills-header-public;
+  color: white;
+  left: 360px;
+}
+
+.quick-id-header::after {
+  content: '';
+  display: block;
+  width: 50px;
+  border: 3px solid $dark-red;
+  margin: 28px 0;
+}
+
+.contact-me-header {
+  @extend .skills-header-public;
+  left: 35px;
+  color: black;
+}
+
+.contact-me-header::after {
+  content: '';
+  display: block;
+  width: 50px;
+  border: 3px solid $dark-red;
+  margin: 28px 0;
+}
+
+.table-left {
+  position: relative;
+  left: 360px;
+  top: 120px;
+}
+
+.link {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.left-table-font {
+  font-size: 20px;
+  width: 40%;
+}
+
+.input-textarea {
+  border-bottom: 1px solid black;
+  background-color: #bcc8dc;
+  font-size: 16px;
+  line-height: 2.5;
+  position: relative;
+  left: 0;
+}
+
+.submit-button {
+  background-color: #bcc8dc;
+  color: white;
+  border: 0 solid #555555;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  width: 150px;
+  left: 100px;
+  line-height: 2.5;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #314a74;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+section td {
+  line-height: 2;
+}
+
+input {
+  font-size: 13px;
+}
+
+::placeholder {
+  color: black;
+}
