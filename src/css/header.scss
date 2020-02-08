@@ -1,0 +1,32 @@
+
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 60px 60px 0;
+  z-index: 1000;
+
+  a {
+    text-decoration: none;
+  }
+
+  .homepage {
+    color: $white;
+    font-size: $font-l;
+    font-weight: bold;
+    float: left;
+
+    &:hover {
+      color: $cyan;
+    }
+  }
+
+  .download-btn {
+    float: right;
+    color: white;
+    background-color: none;
+    border: 1px solid white;
+    padding: 10px 30px;
+  }
+}
