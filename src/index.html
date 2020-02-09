@@ -21,6 +21,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/index.scss" />
+    <!-- JQuery -->
+    <script src="/jquery/jquery-1.11.1.min.js"></script>
   </head>
   <body>
     <header id="header" class="clearfix">
@@ -150,9 +152,7 @@
 
         <!---------------------- Form Area ------------------>
         <section class="form-section">
-
           <section class="information-section-left">
-
             <h2 class="quick-id-header">QUICK ID</h2>
 
             <table class="table-left">
@@ -251,4 +251,11 @@
     <!------------------ FOOTER ------------------>
     <script src="./js/index.js"></script>
   </body>
+  <script>
+    $(document).ready(function() {
+      $("p").click(function() {
+        $(this).hide();
+      });
+    });
+  </script>
 </html>
