@@ -1,3 +1,8 @@
+//--------------------------- HEADER INFORMATION ---------------------------
+.header-background
+{
+    position: relative;
+}
 
 #header {
   position: fixed;
@@ -30,3 +35,66 @@
     padding: 10px 30px;
   }
 }
+
+//--------------------------- HEADER BACKGROUND ---------------------------
+@import './global';
+@import './information';
+
+$basic-blue: #bcc8dc;
+$basic-grey: #edeff5;
+$dark-red: #d93347;
+$dark-blue: #314a74;
+
+.myheader
+{
+  position: absolute;
+  top:295px;
+  left:390px;
+  color: white;
+  font-size:70px;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.Business_ex
+{
+  position: absolute;
+  top:90px;
+  left:100px;
+
+  font-size:25px;
+  font-weight: 200;
+  color: $basic-blue;
+  z-index: 1;
+
+}
+
+.mybackground
+{
+  position: absolute;
+  // margin-left: 120px;
+  height:625px;
+  width:100% auto;
+}
+
+.myimage
+{
+    // position: absolute;
+  margin-top:100px;
+  width:250px;
+  height:250px;
+  border-radius:250px;
+  border-style:solid;
+  border-width:8px;
+  border-color: white;
+  position: absolute;
+  top:400px;
+  left:490px;
+}
+
+// .carousel_container
+// {
+//   position: relative;
+//   top:500px;
+// }
+

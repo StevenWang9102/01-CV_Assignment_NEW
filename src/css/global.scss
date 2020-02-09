@@ -61,13 +61,16 @@ textarea,
 h2 {
   border: 0;
 }
-
+section
+{
+  display: block;
+}
 * {
   box-sizing: border-box;
 }
 
 body {
-  position: static;
+  // position: static;
   font-family: sans-serif, Arial, Helvetica;
 }
 
