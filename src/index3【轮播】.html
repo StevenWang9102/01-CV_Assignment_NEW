@@ -10,6 +10,25 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+
+    <!-- Dom 加载完毕 -->
+    <script>
+      $(document).ready(function() {
+        $("p").click(function() {
+          $(this).hide();
+        });
+      });
+
+      $(document).ready(function() {
+        $("div").click(function() {
+          $(this).hide();
+        });
+      });
+
+      // 转起来
+      // $('.carousel').carousel()
+  
+    </script>
    
     <link
       rel="stylesheet"
@@ -26,6 +45,8 @@
   </head>
   <body>
     <p>我在这里</p>
+    <div>我在这里</div>
+
     <div class="bd-example">
       <div
         id="carouselExampleCaptions"
@@ -33,7 +54,7 @@
         data-ride="carousel"
       >
         <!-- 轮播小圆点 -->
-        <ol class="carousel-indicators">
+        <!-- <ol class="carousel-indicators">
           <li
             data-target="#carouselExampleCaptions"
             data-slide-to="0"
@@ -41,7 +62,7 @@
           ></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
+        </ol> -->
 
         <!-- 轮播内容 -->
         <div class="carousel-inner">
@@ -94,14 +115,5 @@
       </div>
     </div>
   </body>
-  <script>
-    $(document).ready(function() {
-      $("p").click(function() {
-        $(this).hide();
-      });
-    });
-    // 转起来
-    $('.carousel').carousel()
-
-  </script>
+  
 </html>
