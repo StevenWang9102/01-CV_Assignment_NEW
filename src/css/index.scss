@@ -1,5 +1,5 @@
 @import './global';
-@import './information';
+@import './form.scss';
 @import './header.scss';
 @import './skills.scss';
 @import './carousel.scss';
@@ -20,6 +20,7 @@ $dark-blue: #314a74;
   font-size: 20px;
   font-weight: bold;
 }
+
 .HOME:hover {
   color: $basic-blue;
 }

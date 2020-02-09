@@ -33,88 +33,180 @@
       >
     </header>
 
-    <main >
+    <main>
       <div class="main-container">
+        <!---------------- Header Background --------------->
+        <section class="header-background">
+          <div class="container">
+            <div class="row ">
+              <h1 class="myheader">
+                John Roberts<br />
+                <span class="Business_ex">BUSINESS EXPERT</span>
+              </h1>
 
-      <!---------------- Header Background --------------->
-      <section class="header-background">
-        <div class="container">
-          <div class="row ">
-            <h1 class="myheader">
-              John Roberts<br /><span class="Business_ex"
-                >BUSINESS EXPERT</span
-              >
-            </h1>
-
-            <img class="mybackground"
-                src="./img/上方背景.png"
-                alt="Steven Wang"
-              />
-            
-            <img class="myimage" src="./img/头像.png" alt="Steven Wang" />
-          </div>
-        </div>
-      </section>
-      
-    
-
-      <!---------------------- Carousel Area ------------------> 
-
-      <!---------------------- Skill Area ------------------>
-      
-      <section class="skills-section">
-        <div class="container">
-          <div class="row ">
-            <h2 class="skills-header">SKILLS</h2>
-            
-            <img class="mybackground"
+              <img
+                class="mybackground"
                 src="./img/上方背景.png"
                 alt="Steven Wang"
               />
 
-            <div class="decoration-div-first"></div>
-      
-            <ul class="wrapper-box">
-              <li class="skill-Excel">
-                <div class="smaller-font">Microsoft Excel</div>
-                <div class="dark_red_font">Advanced</div>
-              </li>
-
-              <li class="skill-Word">
-                <div class="smaller-font">Microsoft Word</div>
-                <div class="dark_bule_font">Advanced</div>
-              </li>
-              
-              <li class="skill-Adobe">
-                <div class="smaller-font">Adobe</div>
-                <div class="dark_bule_font">Proficient</div>
-              </li>
-              
-              <li class="skill-Spanish">
-                <div class="smaller-font">Spanish</div>
-                <div class="dark_bule_font">Advanced</div>
-              </li>
-              
-              <!-- 以下两个位置正常 -->
-              <li class="skill-PowerPoint">
-                <div class="smaller-font">PowerPoint</div>
-                <div class="dark_red_font">Proficient</div>
-              </li>
-              
-              <li class="skill-French">
-                <div class="smaller-font">French</div>
-                <div class="dark_red_font">Native</div>
-              </li>
-              
-            </ul>
+              <img class="myimage" src="./img/头像.png" alt="Steven Wang" />
+            </div>
           </div>
-        </div>
-      </section>
-      
+        </section>
 
-      <!---------------------- Form Area ------------------>
-      
-    </div>
+        <!---------------------- Carousel Area ------------------>
+
+        <div style="font-size: large;">这部分是轮播</div>
+        <div style="font-size: large;">这部分是轮播</div>
+
+        <!---------------------- Skill Area ------------------>
+
+        <section class="skills-section">
+          <div class="container">
+            <div class="row ">
+              <h2 class="skills-header">SKILLS</h2>
+
+              <img
+                class="mybackground"
+                src="./img/上方背景.png"
+                alt="Steven Wang"
+              />
+
+              <div class="decoration-div-first"></div>
+
+              <ul class="wrapper-box">
+                <li class="skill-Excel">
+                  <div class="smaller-font">Microsoft Excel</div>
+                  <div class="dark_red_font">Advanced</div>
+                </li>
+
+                <li class="skill-Word">
+                  <div class="smaller-font">Microsoft Word</div>
+                  <div class="dark_bule_font">Advanced</div>
+                </li>
+
+                <li class="skill-Adobe">
+                  <div class="smaller-font">Adobe</div>
+                  <div class="dark_bule_font">Proficient</div>
+                </li>
+
+                <li class="skill-Spanish">
+                  <div class="smaller-font">Spanish</div>
+                  <div class="dark_bule_font">Advanced</div>
+                </li>
+
+                <li class="skill-PowerPoint">
+                  <div class="smaller-font">PowerPoint</div>
+                  <div class="dark_red_font">Proficient</div>
+                </li>
+
+                <li class="skill-French">
+                  <div class="smaller-font">French</div>
+                  <div class="dark_red_font">Native</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!---------------------- Form Area ------------------>
+        <section class="form-section">
+          <section class="information-section-left">
+            <h2 class="quick-id-header">QUICK ID</h2>
+
+            <table class="table-left">
+              <tr>
+                <th class="left-table-font">Phone</th>
+                <td>
+                  <a href="tel:123-456-7890" class="link">123-456-7890</a>
+                </td>
+              </tr>
+              <tr>
+                <th class="left-table-font">Email</th>
+                <td>
+                  <a href="mailto:info@mysite.com" class="link"
+                    >info@mysite.com</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th class="left-table-font">Website</th>
+                <td>
+                  <a href="http://www.wix.com" target="_blank" class="link"
+                    >www.wix.com</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th class="left-table-font">Address</th>
+                <td>500 Terry Francois Street</td>
+              </tr>
+              <tr>
+                <th></th>
+                <td>San Francisco, CA 94158</td>
+              </tr>
+            </table>
+          </section>
+
+          <section class="information-section-right">
+            <h2 class="contact-me-header">CONTACT ME</h2>
+
+            <form action="/sign-up" method="POST">
+              <div class="inline-block">
+                <label for="name"></label>
+                <input
+                  class="input-textarea"
+                  id="name"
+                  type="text"
+                  name="name"
+                  value=""
+                  placeholder="Name"
+                  size="25"
+                />
+              </div>
+
+              <div class="inline-block">
+                <input
+                  class="input-textarea"
+                  id="email"
+                  type="text"
+                  name="email"
+                  value=""
+                  placeholder="Email"
+                  size="25"
+                />
+              </div>
+
+              <div>
+                <label for="subject"></label>
+                <input
+                  class="input-textarea"
+                  id="subject"
+                  type="text"
+                  name="subject"
+                  value=""
+                  placeholder="Subject"
+                  size="56"
+                />
+              </div>
+
+              <textarea
+                class="input-textarea"
+                id="message"
+                name="message"
+                rows="3"
+                cols="58"
+                placeholder="Message"
+              ></textarea>
+
+              <div>
+                <button class="submit-button" type="submit">Submit</button>
+              </div>
+            </form>
+          </section>
+        </section>
+      </div>
     </main>
     <!------------------ FOOTER ------------------>
     <script src="./js/index.js"></script>

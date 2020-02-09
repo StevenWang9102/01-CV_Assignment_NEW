@@ -691,6 +691,12 @@ input {
   color: black;
 }
 
+.form-section {
+  position: relative;
+  top: 900px;
+  height: 800px;
+}
+
 .header-background {
   position: relative;
 }
@@ -1416,10 +1422,17 @@ input {
   color: black;
 }
 
+.form-section {
+  position: relative;
+  top: 900px;
+  height: 800px;
+}
+
 .myheader {
   position: absolute;
   top: 295px;
-  left: 390px;
+  left: 480px;
+  margin: 0 auto;
   color: white;
   font-size: 70px;
   font-weight: 500;
@@ -1459,7 +1472,7 @@ input {
 
 .skills-section {
   position: relative;
-  top: 800px;
+  top: 1000px;
   height: 730px;
   z-index: 0;
 }

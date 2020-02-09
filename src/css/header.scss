@@ -38,18 +38,21 @@
 
 //--------------------------- HEADER BACKGROUND ---------------------------
 @import './global';
-@import './information';
+@import './form.scss';
 
 $basic-blue: #bcc8dc;
 $basic-grey: #edeff5;
 $dark-red: #d93347;
 $dark-blue: #314a74;
 
+
 .myheader
 {
   position: absolute;
   top:295px;
-  left:390px;
+  left:480px;
+  // text-align:center;
+  margin:0 auto;
   color: white;
   font-size:70px;
   font-weight: 500;
