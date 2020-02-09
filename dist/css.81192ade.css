@@ -1429,7 +1429,8 @@ input {
 
 .mybackground {
   position: absolute;
-  height: 625px;
+  margin-left: -120px;
+  height: 700px;
   width: 100% auto;
   background-size: cover;
 }
