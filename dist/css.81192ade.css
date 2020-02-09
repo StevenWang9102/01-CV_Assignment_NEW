@@ -277,6 +277,10 @@ section {
   display: block;
 }
 
+main {
+  width: 100% !important;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -993,6 +997,10 @@ section {
   display: block;
 }
 
+main {
+  width: 100% !important;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -1423,6 +1431,7 @@ input {
   position: absolute;
   height: 625px;
   width: 100% auto;
+  background-size: cover;
 }
 
 .myimage {
