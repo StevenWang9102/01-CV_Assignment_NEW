@@ -40,13 +40,14 @@ section ul {
   align-items: flex-start;
   align-content: flex-start;
 }
+
 .wrapper-box {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   font-weight: bold;
   text-align: center;
-  position: relative;
+  position: absolute;
   left: 360px;
   top: 130px;
 }

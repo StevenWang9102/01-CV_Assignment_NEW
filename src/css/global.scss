@@ -134,3 +134,11 @@ a {
     @include center-block();
   }
 }
+
+.main-container{
+  position: relative;
+  // 父亲要是相对定位
+  // width: 90%;
+  height: 3000px;
+  // background-color: blue($color: #000000);
+}
