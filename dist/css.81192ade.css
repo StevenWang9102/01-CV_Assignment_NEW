@@ -567,7 +567,7 @@ template {
 
 .information-section, .information-section-right, .information-section-left {
   display: inline-block;
-  width: 49%;
+  width: 50%;
   height: 520px;
   padding: 30px;
   margin: 0;
@@ -575,23 +575,22 @@ template {
   color: white;
   background: #314a74;
   font-size: 15px;
-  position: relative;
+  position: absolute;
 }
 
 .information-section-left {
-  top: -315px;
+  top: 0px;
 }
 
 .information-section-right {
-  top: -5px;
-  left: -5px;
+  left: 50%;
   display: inline-block;
   background: #bcc8dc;
 }
 
 .quick-id-header {
   color: white;
-  left: 360px;
+  left: 4%;
 }
 
 .quick-id-header::after {
@@ -617,7 +616,7 @@ template {
 
 .table-left {
   position: relative;
-  left: 360px;
+  left: 4%;
   top: 120px;
 }
 
@@ -695,6 +694,7 @@ input {
   position: relative;
   top: 900px;
   height: 800px;
+  margin-top: -10px;
 }
 
 .header-background {
@@ -1298,7 +1298,7 @@ template {
 
 .information-section, .information-section-left, .information-section-right {
   display: inline-block;
-  width: 49%;
+  width: 50%;
   height: 520px;
   padding: 30px;
   margin: 0;
@@ -1306,23 +1306,22 @@ template {
   color: white;
   background: #314a74;
   font-size: 15px;
-  position: relative;
+  position: absolute;
 }
 
 .information-section-left {
-  top: -315px;
+  top: 0px;
 }
 
 .information-section-right {
-  top: -5px;
-  left: -5px;
+  left: 50%;
   display: inline-block;
   background: #bcc8dc;
 }
 
 .quick-id-header {
   color: white;
-  left: 360px;
+  left: 4%;
 }
 
 .quick-id-header::after {
@@ -1348,7 +1347,7 @@ template {
 
 .table-left {
   position: relative;
-  left: 360px;
+  left: 4%;
   top: 120px;
 }
 
@@ -1426,6 +1425,7 @@ input {
   position: relative;
   top: 900px;
   height: 800px;
+  margin-top: -10px;
 }
 
 .myheader {

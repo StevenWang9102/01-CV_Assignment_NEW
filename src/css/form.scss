@@ -4,7 +4,7 @@
 // MY information css
 .information-section {
   display: inline-block;
-  width: 49%;
+  width: 50%;
   height: 520px;
   padding: 30px;
   margin: 0;
@@ -12,18 +12,17 @@
   color: white;
   background: #314a74;
   font-size: 15px;
-  position: relative;
+  position: absolute;
 }
 
 .information-section-left {
   @extend .information-section;
-  top: -315px;
+  top: 0px;
 }
 
 .information-section-right {
   @extend .information-section;
-  top: -5px;
-  left: -5px;
+  left: 50%;
   display: inline-block;
   background: #bcc8dc;
 }
@@ -31,7 +30,7 @@
 .quick-id-header {
   @extend .skills-header-public;
   color: white;
-  left: 360px;
+  left: 4%;
 }
 
 .quick-id-header::after {
@@ -58,7 +57,7 @@
 
 .table-left {
   position: relative;
-  left: 360px;
+  left: 4%;
   top: 120px;
 }
 
@@ -121,4 +120,5 @@ input {
   position: relative;
   top: 900px;
   height: 800px;
+  margin-top: -10px;
 }
