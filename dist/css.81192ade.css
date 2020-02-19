@@ -1589,8 +1589,9 @@ form {
   top: 62px;
 }
 
-.carousel-section {
+#carousel-section {
   position: relative;
+  width: 500px;
   top: 880px;
   height: 1000px;
   background-color: 82;
