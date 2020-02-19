@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @-ms-viewport {
   width: device-width;
 }
@@ -707,7 +708,6 @@ input {
   top: 0;
   width: 100%;
   padding: 60px 60px 0;
-  z-index: 1000;
 }
 #header a {
   text-decoration: none;
@@ -1468,16 +1468,17 @@ input {
   position: absolute;
   top: 400px;
   left: 490px;
+  z-index: 10;
 }
 
 .skills-section {
   position: relative;
-  top: 1000px;
+  top: 1500px;
   height: 730px;
   z-index: 0;
 }
 
-.skills-header-public, .skills-header, .quick-id-header, .contact-me-header {
+.skills-header-public, .about_header, .skills-header, .quick-id-header, .contact-me-header {
   position: relative;
   font-size: 30px;
   top: 78px;
@@ -1589,12 +1590,41 @@ form {
   top: 62px;
 }
 
-#carousel-section {
+#carousel-area {
   position: relative;
-  width: 500px;
-  top: 880px;
-  height: 1000px;
-  background-color: 82;
+  width: 100%;
+  top: 626px;
+  background-color: #d7c1eb;
+  border: 1px solid red;
+}
+
+#carousel-section {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-indicators {
+  position: absolute;
+  top: 500px;
+  z-index: 10;
+}
+
+.carousel-indicators li {
+  height: 10px;
+  width: 50px;
+  z-index: 10;
+}
+
+.about_header {
+  color: white;
+  position: absolute;
+  left: 10%;
+  top: 30px;
+}
+
+.carousel-item img {
+  width: 10000px;
+  background: url("/轮播背景.74f2967a.png") repeat center;
 }
 
 .HOME {

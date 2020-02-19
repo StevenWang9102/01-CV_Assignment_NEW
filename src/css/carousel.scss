@@ -1,7 +1,42 @@
-#carousel-section{
+#carousel-area{
     position: relative;
-    width: 500px;
-    top:880px;
-    height: 1000px;
-    background-color: blue($color: #c95252);
+    width: 100%;
+    top:626px;
+    // height: 800px;
+    background-color: rgb(215, 193, 235);
+    border: 1px solid red;
+}
+
+#carousel-section
+{
+    position: absolute;
+    top: 0;
+
+}
+
+.carousel-indicators
+{
+    position: absolute;
+    top: 500px; // 暂时位置
+    z-index: 10;
+}
+
+.carousel-indicators li
+{
+    height: 10px;
+    width: 50px;
+    z-index: 10;
+}
+
+.about_header {
+    @extend .skills-header-public;
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 30px;
+  }
+
+.carousel-item img{
+    width: 10000px;
+    background: url('../img/轮播背景.png') repeat center;
 }
