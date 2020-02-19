@@ -12,6 +12,11 @@
   top: 0;
 }
 
+.carousel-caption
+{
+  width: 100% !important;
+  left: 10% !important;
+}
 .carousel-indicators {
   position: absolute;
   top: 500px; // 暂时位置
@@ -26,6 +31,7 @@
 
 .about_header {
   @extend .skills-header-public;
+  font-weight: 600;
   color: black;
   position: absolute;
   left: 10%;
@@ -35,17 +41,20 @@
 
 .carousel-item .img-1 {
   width: 100%;
-  // position: absolute;
   top: 10;
-  // z-index: 0;
 }
 
 .carousel a :hover {
+  height: 40px;
+  width: 40px;
   background-color: red;
 }
 
 .carousel-control-next,
 .carousel-control-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 100;
 }
 
@@ -80,20 +89,58 @@
     flex-wrap: nowrap;
 }
 
-.flex-icons li{
-   
-}
-
 .about_icons {
   position: absolute;
-//   left: ;
 }
 
 // ------------------------------- Experience  ----------------------
-.flex-container .flex-experience{
-    // color: black;
-  width: 30%;
-//   margin: 10px;
+.carousel-secend-container{
+  position: absolute;
+  top:50px;
+}
+
+.carousel1-flex-container1{
+  position: absolute;
+  top:100px;
+}
+
+.carousel1-flex-container2
+{
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  top:150px;
+}
+
+.carousel1-flex-container2  > li{
+  width: 33.3%;
+  margin: 4px;
   text-align: left;
-//   line-height: 1.4;
+  font-size: 20px;
+}
+
+.download-my-cv{
+  position: absolute;
+  top:100px;
+  right: 100px;
+}
+
+// ------------------------------- Third Slide  ----------------------
+.carousel-third-container{
+  position: absolute;
+  top:50px;
+}
+
+.carousel-item h3{
+  color: black;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.carousel1-flex-container2 p{
+  color: black;
+  width: 45%;
+  margin: 10px;
+  text-align: left;
+  line-height: 1.4;
 }
