@@ -26,6 +26,7 @@ $dark-blue: #314a74;
     overflow-x: hidden;
     font-size: $font-m;
     font-family: $font-family-content;
+    line-height: 1.2;
     color: $black;
     background: $white;
   }
@@ -85,8 +86,28 @@ a {
   color: red;
   text-decoration: none;
 }
-@import '~css-reset-and-normalize';
 
+.download-resume {
+  opacity: 0.8;
+  width: 470px;
+  border: 2px solid;
+  color: white;
+  padding: 12px 50px 12px 50px;
+  text-align: center;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  z-index: 300px;
+}
+
+.download-resume-nav {
+  @extend .download-resume;
+  position: fixed;
+  right: 70px;
+  top: 62px;
+}
+
+@import '~css-reset-and-normalize';
 @import './core/constants';
 @import './core/mixins';
 

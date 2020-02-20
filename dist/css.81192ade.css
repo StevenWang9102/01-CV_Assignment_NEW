@@ -240,6 +240,7 @@ template {
   overflow-x: hidden;
   font-size: 17px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.2;
   color: #070a0e;
   background: #ffffff;
 }
@@ -292,6 +293,25 @@ a {
   cursor: pointer;
   color: red;
   text-decoration: none;
+}
+
+.download-resume, .download-resume-bottom, .download-resume-nav {
+  opacity: 0.8;
+  width: 470px;
+  border: 2px solid;
+  color: white;
+  padding: 12px 50px 12px 50px;
+  text-align: center;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  z-index: 300px;
+}
+
+.download-resume-nav {
+  position: fixed;
+  right: 70px;
+  top: 62px;
 }
 
 @-ms-viewport {
@@ -565,17 +585,42 @@ template {
   height: 3000px;
 }
 
+.form-section {
+  position: relative;
+  top: 1243px;
+  height: 604px;
+  margin-top: -10px;
+  border: 2px solid yellow;
+}
+
+@media only screen and (max-width: 900px) {
+  .information-section, .information-section-right, .information-section-left {
+    width: 490px;
+  }
+
+  .information-section-right {
+    left: 490px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .information-section, .information-section-right, .information-section-left {
+    width: 50%;
+  }
+
+  .information-section-right {
+    left: 50%;
+  }
+}
 .information-section, .information-section-right, .information-section-left {
+  position: absolute;
   display: inline-block;
-  width: 50%;
-  height: 520px;
+  height: 580px;
   padding: 30px;
   margin: 0;
   border: 0;
   color: white;
   background: #314a74;
   font-size: 15px;
-  position: absolute;
 }
 
 .information-section-left {
@@ -583,7 +628,6 @@ template {
 }
 
 .information-section-right {
-  left: 50%;
   display: inline-block;
   background: #bcc8dc;
 }
@@ -688,13 +732,6 @@ input {
 
 ::placeholder {
   color: black;
-}
-
-.form-section {
-  position: relative;
-  top: 900px;
-  height: 800px;
-  margin-top: -10px;
 }
 
 .header-background {
@@ -970,6 +1007,7 @@ template {
   overflow-x: hidden;
   font-size: 17px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.2;
   color: #070a0e;
   background: #ffffff;
 }
@@ -1022,6 +1060,25 @@ a {
   cursor: pointer;
   color: red;
   text-decoration: none;
+}
+
+.download-resume, .download-resume-bottom, .download-resume-nav {
+  opacity: 0.8;
+  width: 470px;
+  border: 2px solid;
+  color: white;
+  padding: 12px 50px 12px 50px;
+  text-align: center;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  z-index: 300px;
+}
+
+.download-resume-nav {
+  position: fixed;
+  right: 70px;
+  top: 62px;
 }
 
 @-ms-viewport {
@@ -1295,17 +1352,42 @@ template {
   height: 3000px;
 }
 
+.form-section {
+  position: relative;
+  top: 1243px;
+  height: 604px;
+  margin-top: -10px;
+  border: 2px solid yellow;
+}
+
+@media only screen and (max-width: 900px) {
+  .information-section, .information-section-left, .information-section-right {
+    width: 490px;
+  }
+
+  .information-section-right {
+    left: 490px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .information-section, .information-section-left, .information-section-right {
+    width: 50%;
+  }
+
+  .information-section-right {
+    left: 50%;
+  }
+}
 .information-section, .information-section-left, .information-section-right {
+  position: absolute;
   display: inline-block;
-  width: 50%;
-  height: 520px;
+  height: 580px;
   padding: 30px;
   margin: 0;
   border: 0;
   color: white;
   background: #314a74;
   font-size: 15px;
-  position: absolute;
 }
 
 .information-section-left {
@@ -1313,7 +1395,6 @@ template {
 }
 
 .information-section-right {
-  left: 50%;
   display: inline-block;
   background: #bcc8dc;
 }
@@ -1420,13 +1501,6 @@ input {
   color: black;
 }
 
-.form-section {
-  position: relative;
-  top: 900px;
-  height: 800px;
-  margin-top: -10px;
-}
-
 .myheader {
   position: absolute;
   top: 295px;
@@ -1470,14 +1544,55 @@ input {
   z-index: 10;
 }
 
-.skills-section {
+@media only screen and (max-width: 900px) {
+  .skill-wrapper-box {
+    left: 10%;
+  }
+
+  .skills-header {
+    left: 10%;
+  }
+}
+#skills-section {
   position: relative;
-  top: 1500px;
+  top: 1231px;
   height: 730px;
+  border: 2px solid gold;
   z-index: 0;
 }
 
-.skills-header-public, .about_header, .skills-header, .quick-id-header, .contact-me-header {
+.skills-content {
+  border: 2px solid yellow;
+}
+
+#skills-section img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -10;
+}
+
+.skill-wrapper-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  left: 13%;
+  top: 150px;
+}
+
+.skill-wrapper-box > * {
+  padding: 20px;
+  flex-grow: 0;
+  vertical-align: middle;
+}
+
+.skills-header-public, .carousel_public_header, .education_header, .carousel_experience_header, .about_header, .skills-header, .quick-id-header, .contact-me-header {
   position: relative;
   font-size: 30px;
   top: 78px;
@@ -1485,8 +1600,9 @@ input {
 }
 
 .skills-header {
+  position: absolute;
   color: white;
-  left: 360px;
+  left: 13%;
 }
 
 .skills-header::after {
@@ -1572,45 +1688,47 @@ form {
   top: 110px;
 }
 
-.download-resume, .download-resume-nav {
-  opacity: 0.8;
-  border: 2px solid;
-  color: white;
-  padding: 12px 50px 12px 50px;
-  text-align: center;
-  font-size: 12px;
-  margin: 4px 2px;
-  cursor: pointer;
+.carousel-item {
+  height: 800px;
 }
 
-.download-resume-nav {
-  position: fixed;
-  right: 70px;
-  top: 62px;
+.carousel-inner img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #carousel-area {
   position: relative;
   width: 100%;
   top: 626px;
-  background-color: #d7c1eb;
+  height: 600px;
+  background-color: #e9dff3;
   border: 1px solid red;
 }
 
 #carousel-section {
+  width: 100%;
+  top: 626px;
+  height: 600px;
+  background-color: #e9dff3;
+  border: 3px solid red;
   position: absolute;
-  top: 0;
 }
 
 .carousel-caption {
   width: 100% !important;
   left: 10% !important;
+  top: 30px;
+  height: 500px;
+  border: 3px solid blueviolet;
 }
 
 .carousel-indicators {
   position: absolute;
-  top: 500px;
-  z-index: 10;
+  bottom: 30px;
+  z-index: 100;
 }
 
 .carousel-indicators li {
@@ -1619,13 +1737,24 @@ form {
   z-index: 10;
 }
 
-.about_header {
+.carousel_public_header, .education_header, .carousel_experience_header, .about_header {
   font-weight: 600;
   color: black;
   position: absolute;
-  left: 10%;
-  top: 80px;
   z-index: 100;
+  left: 0px;
+}
+
+.about_header {
+  top: 100px;
+}
+
+.carousel_experience_header {
+  top: 100px;
+}
+
+.education_header {
+  top: 100px;
 }
 
 .carousel-item .img-1 {
@@ -1647,23 +1776,20 @@ form {
   z-index: 100;
 }
 
-.flex-container {
+.about-flex-container {
   display: flex;
   flex-wrap: nowrap;
+  position: absolute;
+  top: 240px;
+  border: 2px solid black;
 }
 
-.flex-container > p {
+.about-flex-container > p {
   color: black;
   width: 45%;
   margin: 10px;
   text-align: left;
   line-height: 1.4;
-}
-
-.about_header {
-  position: absolute;
-  top: -10px;
-  left: 10px;
 }
 
 .about_icons {
@@ -1686,19 +1812,14 @@ form {
   top: 50px;
 }
 
-.carousel1-flex-container1 {
-  position: absolute;
-  top: 100px;
-}
-
-.carousel1-flex-container2 {
+.about-flex-container {
   display: flex;
   flex-wrap: nowrap;
   position: absolute;
-  top: 150px;
+  top: 200px;
 }
 
-.carousel1-flex-container2 > li {
+.about-flex-container > li {
   width: 33.3%;
   margin: 4px;
   text-align: left;
@@ -1722,12 +1843,98 @@ form {
   font-weight: 900;
 }
 
-.carousel1-flex-container2 p {
+.about-flex-container p {
   color: black;
-  width: 45%;
-  margin: 10px;
+  width: 95%;
+  margin: 12px 0 5px;
+  margin-right: 10px;
+  font-size: 14px;
   text-align: left;
   line-height: 1.4;
+}
+
+.about-flex-container time {
+  color: #9fcbf5;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#footer-section {
+  position: absolute;
+  top: 2573px;
+  height: 220px;
+  width: 100%;
+  border: 4px solid yellowgreen;
+  background-color: #edeff5;
+}
+
+.download-resume-bottom {
+  color: black;
+  position: absolute;
+  left: 10px;
+  right: 70px;
+  top: 80px;
+}
+.download-resume-bottom:after {
+  background-color: #332c21;
+}
+
+#footer-section div:nth-child(1) p {
+  font-size: 14px;
+  position: absolute;
+  bottom: 27px;
+}
+
+.footer-social-media p {
+  position: absolute;
+  bottom: 27px;
+  width: 250px;
+  display: block;
+  margin-left: 90px;
+}
+
+.footer-flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.footer-flex-container div {
+  width: 50%;
+}
+
+.footer-flex-container div:nth-child(1) {
+  height: 100%;
+}
+
+.footer-flex-container div:nth-child(2) {
+  height: 100%;
+}
+
+.footer-social-media img {
+  height: 30px;
+  width: 30px;
+  border-radius: 5%;
+}
+
+.footer-social-media ul {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  margin-left: 90px;
+  top: 50px;
+}
+
+.footer-social-media ul > li {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 20px;
+  background-color: indigo;
+}
+
+main {
+  border: 3px solid red;
+  height: 100%;
 }
 
 .HOME {
@@ -1759,23 +1966,6 @@ section ul {
   top: 230px;
   align-items: flex-start;
   align-content: flex-start;
-}
-
-.wrapper-box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-weight: bold;
-  text-align: center;
-  position: absolute;
-  left: 360px;
-  top: 130px;
-}
-
-.wrapper-box > * {
-  padding: 20px;
-  flex-grow: 0;
-  vertical-align: middle;
 }
 
 /*# sourceMappingURL=/css.81192ade.css.map */

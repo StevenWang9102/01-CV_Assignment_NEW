@@ -1,18 +1,49 @@
 @import './core/constants';
 @import './core/mixins';
 
-// MY information css
+
+.form-section
+{
+  position: relative;
+  top: 1243px;
+  height: 604px;
+  margin-top: -10px;
+  border: 2px solid yellow;
+}
+
+// 屏幕小于900px的情况
+@media only screen and (max-width: 900px) {
+  .information-section {
+    width: 490px;
+  }
+  .information-section-right
+  {
+    left: 490px;
+  }
+}
+
+// 屏幕大于900px的情况
+@media only screen and (min-width: 900px) {
+  .information-section {
+    width: 50%;
+  }
+  .information-section-right
+  {
+    left: 50%
+  }
+
+}
+
 .information-section {
+  position: absolute;
   display: inline-block;
-  width: 50%;
-  height: 520px;
+  height: 580px;
   padding: 30px;
   margin: 0;
   border: 0;
   color: white;
   background: #314a74;
   font-size: 15px;
-  position: absolute;
 }
 
 .information-section-left {
@@ -22,7 +53,7 @@
 
 .information-section-right {
   @extend .information-section;
-  left: 50%;
+  // left: 50%;
   display: inline-block;
   background: #bcc8dc;
 }
@@ -113,12 +144,4 @@ input {
 
 ::placeholder {
   color: black;
-}
-
-.form-section
-{
-  position: relative;
-  top: 900px;
-  height: 800px;
-  margin-top: -10px;
 }

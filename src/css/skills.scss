@@ -1,24 +1,64 @@
-
-.skills-section {
-    position: relative;
-    top: 1500px;
-    height: 730px;
-    z-index: 0;
-    // background: url('../css/背景.png') fixed no-repeat;
+// ---------------- Media Query ----------------
+@media only screen and (max-width: 900px) {
+  .skill-wrapper-box {   
+    left: 10%;
   }
+  .skills-header {
+    left: 10%;
+  }
+}
+
+#skills-section {
+    position: relative;
+    top: 1231px;
+    height: 730px;
+    border: 2px solid gold;
+    z-index: 0;
+}
+
+.skills-content{
+  border: 2px solid yellow;
+}
+
+#skills-section img{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  z-index: -10;
+}
   
+.skill-wrapper-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  left: 13%;
+  top: 150px;
+}
+
+.skill-wrapper-box > * {
+  padding: 20px;
+  flex-grow: 0;
+  vertical-align: middle;
+}
+
+
   .skills-header-public {
     position: relative;
     font-size: 30px;
     top: 78px;
     font-weight: bold;
-
   }
   
   .skills-header {
     @extend .skills-header-public;
+    position: absolute;
     color: white;
-    left: 360px;
+    left: 13%;
   }
   
   .skills-header::after {
@@ -107,21 +147,5 @@
     top: 110px;
   }
   
-  .download-resume {
-    opacity: 0.8;
-    border: 2px solid;
-    color: white;
-    padding: 12px 50px 12px 50px;
-    text-align: center;
-    font-size: 12px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
   
-  .download-resume-nav {
-    @extend .download-resume;
-    position: fixed;
-    right: 70px;
-    top: 62px;
-  }
   

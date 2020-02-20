@@ -3,6 +3,7 @@
 @import './header.scss';
 @import './skills.scss';
 @import './carousel.scss';
+@import './footer.scss';
 
 
 
@@ -32,6 +33,7 @@ header {
 section{
   position: static;
 }
+
 section ul {
   height: 440px;
   width: 948px;
@@ -40,22 +42,5 @@ section ul {
   top: 230px;
   align-items: flex-start;
   align-content: flex-start;
-}
-
-.wrapper-box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-weight: bold;
-  text-align: center;
-  position: absolute;
-  left: 360px;
-  top: 130px;
-}
-
-.wrapper-box > * {
-  padding: 20px;
-  flex-grow: 0;
-  vertical-align: middle;
 }
 
