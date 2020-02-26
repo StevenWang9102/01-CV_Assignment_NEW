@@ -14,11 +14,11 @@
 // 屏幕小于900px的情况
 @media only screen and (max-width: 900px) {
   .information-section {
-    width: 490px;
+    width: 450px;
   }
   .information-section-right
   {
-    left: 490px;
+    left: 450px;
   }
 }
 
@@ -120,14 +120,16 @@
   font-size: 18px;
   font-weight: 700;
   position: relative;
-  width: 150px;
-  left: 100px;
+  width: 140px;
+  left: 140px;
   line-height: 2.5;
   cursor: pointer;
 }
 
 .submit-button:hover {
-  background-color: #314a74;
+  color: #314a74;
+
+  // background-color: #314a74;
 }
 
 .inline-block {

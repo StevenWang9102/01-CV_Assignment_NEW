@@ -283,7 +283,7 @@ a {
   text-decoration: none;
 }
 
-.download-resume, .download-resume-bottom, .download-resume-top {
+.download-resume, .download-resume-bottom, .download-resume-carousel, .download-resume-top {
   opacity: 0.8;
   width: 350px;
   border: 1px solid;
@@ -295,7 +295,7 @@ a {
   cursor: pointer;
   z-index: 300px;
 }
-.download-resume:hover, .download-resume-bottom:hover, .download-resume-top:hover {
+.download-resume:hover, .download-resume-bottom:hover, .download-resume-carousel:hover, .download-resume-top:hover {
   color: crimson;
   text-decoration: none;
   background-color: rgba(253, 245, 249, 0.842);
@@ -317,11 +317,11 @@ a {
 
 @media only screen and (max-width: 900px) {
   .information-section, .information-section-right, .information-section-left {
-    width: 490px;
+    width: 450px;
   }
 
   .information-section-right {
-    left: 490px;
+    left: 450px;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -414,14 +414,14 @@ a {
   font-size: 18px;
   font-weight: 700;
   position: relative;
-  width: 150px;
-  left: 100px;
+  width: 140px;
+  left: 140px;
   line-height: 2.5;
   cursor: pointer;
 }
 
 .submit-button:hover {
-  background-color: #314a74;
+  color: #314a74;
 }
 
 .inline-block {
@@ -741,7 +741,7 @@ a {
   text-decoration: none;
 }
 
-.download-resume, .download-resume-bottom, .download-resume-top {
+.download-resume, .download-resume-bottom, .download-resume-carousel, .download-resume-top {
   opacity: 0.8;
   width: 350px;
   border: 1px solid;
@@ -753,7 +753,7 @@ a {
   cursor: pointer;
   z-index: 300px;
 }
-.download-resume:hover, .download-resume-bottom:hover, .download-resume-top:hover {
+.download-resume:hover, .download-resume-bottom:hover, .download-resume-carousel:hover, .download-resume-top:hover {
   color: crimson;
   text-decoration: none;
   background-color: rgba(253, 245, 249, 0.842);
@@ -775,11 +775,11 @@ a {
 
 @media only screen and (max-width: 900px) {
   .information-section, .information-section-left, .information-section-right {
-    width: 490px;
+    width: 450px;
   }
 
   .information-section-right {
-    left: 490px;
+    left: 450px;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -872,14 +872,14 @@ a {
   font-size: 18px;
   font-weight: 700;
   position: relative;
-  width: 150px;
-  left: 100px;
+  width: 140px;
+  left: 140px;
   line-height: 2.5;
   cursor: pointer;
 }
 
 .submit-button:hover {
-  background-color: #314a74;
+  color: #314a74;
 }
 
 .inline-block {
@@ -1160,7 +1160,14 @@ form {
 }
 
 .carousel-item {
+  position: relative;
   height: 800px;
+  border: 11px solid darkblue;
+}
+
+#carousel-section p {
+  font-family: serif, Times;
+  font-size: 16px;
 }
 
 .carousel-inner img {
@@ -1189,7 +1196,8 @@ form {
 }
 
 .carousel-caption {
-  width: 100% !important;
+  position: absolute;
+  width: 80% !important;
   left: 10% !important;
   top: 30px;
   height: 500px;
@@ -1239,6 +1247,11 @@ form {
   background-color: red;
 }
 
+.test {
+  border: 1px solid yellow;
+  z-index: 102;
+}
+
 .carousel-control-next,
 .carousel-control-prev {
   position: absolute;
@@ -1257,7 +1270,8 @@ form {
 
 .about-flex-container > p {
   color: black;
-  width: 45%;
+  width: 15%;
+  max-width: 70%;
   margin: 10px;
   text-align: left;
   line-height: 1.4;
@@ -1283,6 +1297,13 @@ form {
   top: 50px;
 }
 
+.download-resume-carousel {
+  position: absolute;
+  margin-left: 66%;
+  width: 300px;
+  border: 1px solid black;
+}
+
 .about-flex-container {
   display: flex;
   flex-wrap: nowrap;
@@ -1290,11 +1311,15 @@ form {
   top: 200px;
 }
 
-.about-flex-container > li {
+.carousel-secend-container .about-flex-container > li {
   width: 33.3%;
   margin: 4px;
   text-align: left;
   font-size: 20px;
+}
+
+.carousel-secend-container .about-flex-container p {
+  width: 100%;
 }
 
 .download-my-cv {
@@ -1310,14 +1335,45 @@ form {
 
 .carousel-item h3 {
   color: black;
+  text-align: left;
   font-size: 18px;
   font-weight: 900;
 }
 
+.carousel-third-container .about-flex-container p {
+  width: 100%;
+}
+
+.carousel-social-media {
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  height: 40px;
+  width: 200px;
+}
+
+.carousel-social-media ul {
+  position: absolute;
+  height: 40px;
+  width: 200px;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+}
+
+.carousel-social-media img {
+  height: 30px;
+  width: 30px;
+  border-radius: 5%;
+  margin-right: 15px;
+}
+
 .about-flex-container p {
   color: black;
-  width: 95%;
-  margin: 12px 0 5px;
+  width: 50%;
+  margin: 12px 5px 5px;
   margin-right: 10px;
   font-size: 14px;
   text-align: left;
@@ -1331,22 +1387,45 @@ form {
 }
 
 #footer-section {
-  position: absolute;
-  top: 2573px;
+  position: relative;
+  top: 1233px;
   height: 220px;
   width: 100%;
   border: 4px solid yellowgreen;
   background-color: #edeff5;
 }
 
-.download-resume-bottom {
+.footer-left-container p {
+  position: absolute;
+  left: 80px;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-left-container {
+    width: 450px;
+    border: 1px solid #3a0707;
+  }
+
+  .footer-social-media {
+    left: 450px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .footer-left-container {
+    width: 50%;
+  }
+
+  .footer-social-media {
+    left: 50%;
+  }
+}
+.download-resume-bottom, .download-resume-carousel {
   color: black;
   position: absolute;
-  left: 10px;
-  right: 70px;
+  left: 80px;
   top: 80px;
 }
-.download-resume-bottom:after {
+.download-resume-bottom:after, .download-resume-carousel:after {
   background-color: #332c21;
 }
 
@@ -1354,6 +1433,10 @@ form {
   font-size: 14px;
   position: absolute;
   bottom: 27px;
+}
+
+.footer-social-media ul {
+  border: 5px solid green;
 }
 
 .footer-social-media p {
@@ -1369,12 +1452,14 @@ form {
   flex-wrap: nowrap;
 }
 
-.footer-flex-container div {
-  width: 50%;
-}
-
 .footer-flex-container div:nth-child(1) {
   height: 100%;
+  border: 2px solid #d39c9c;
+}
+
+.footer-flex-container div:nth-child(1) a {
+  position: absolute;
+  right: 0;
 }
 
 .footer-flex-container div:nth-child(2) {
@@ -1399,7 +1484,7 @@ form {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  margin-left: 20px;
+  margin-right: 20px;
   background-color: indigo;
 }
 
