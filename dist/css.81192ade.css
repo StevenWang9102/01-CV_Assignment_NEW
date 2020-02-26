@@ -286,7 +286,7 @@ a {
 .download-resume, .download-resume-bottom, .download-resume-carousel, .download-resume-top {
   opacity: 0.8;
   width: 350px;
-  border: 1px solid;
+  border: 1.5px solid;
   color: white;
   padding: 12px 50px 12px 50px;
   text-align: center;
@@ -312,7 +312,6 @@ a {
   top: 1243px;
   height: 604px;
   margin-top: -10px;
-  border: 2px solid yellow;
 }
 
 @media only screen and (max-width: 900px) {
@@ -339,7 +338,6 @@ a {
   height: 580px;
   padding: 30px;
   margin: 0;
-  border: 0;
   color: white;
   background: #314a74;
   font-size: 15px;
@@ -744,7 +742,7 @@ a {
 .download-resume, .download-resume-bottom, .download-resume-carousel, .download-resume-top {
   opacity: 0.8;
   width: 350px;
-  border: 1px solid;
+  border: 1.5px solid;
   color: white;
   padding: 12px 50px 12px 50px;
   text-align: center;
@@ -770,7 +768,6 @@ a {
   top: 1243px;
   height: 604px;
   margin-top: -10px;
-  border: 2px solid yellow;
 }
 
 @media only screen and (max-width: 900px) {
@@ -797,7 +794,6 @@ a {
   height: 580px;
   padding: 30px;
   margin: 0;
-  border: 0;
   color: white;
   background: #314a74;
   font-size: 15px;
@@ -985,9 +981,7 @@ input {
   width: 250px;
   height: 250px;
   border-radius: 250px;
-  border-style: solid;
-  border-width: 8px;
-  border-color: white;
+  border: 8px solid white;
   top: 200px;
   margin-left: 100px;
   z-index: 10;
@@ -1159,10 +1153,17 @@ form {
   top: 110px;
 }
 
+#carousel-section {
+  width: 100%;
+  top: 600px;
+  height: 600px;
+  background-color: #e9dff3;
+  position: absolute;
+}
+
 .carousel-item {
   position: relative;
   height: 800px;
-  border: 11px solid darkblue;
 }
 
 #carousel-section p {
@@ -1177,31 +1178,12 @@ form {
      object-fit: cover;
 }
 
-#carousel-area {
-  position: relative;
-  width: 100%;
-  top: 626px;
-  height: 600px;
-  background-color: #e9dff3;
-  border: 1px solid red;
-}
-
-#carousel-section {
-  width: 100%;
-  top: 626px;
-  height: 600px;
-  background-color: #e9dff3;
-  border: 3px solid red;
-  position: absolute;
-}
-
 .carousel-caption {
   position: absolute;
   width: 80% !important;
   left: 10% !important;
   top: 30px;
   height: 500px;
-  border: 3px solid blueviolet;
 }
 
 .carousel-indicators {
@@ -1224,6 +1206,10 @@ form {
   left: 0px;
 }
 
+.carousel-caption .about-flex-container .slide-one-paragraph {
+  margin-right: 20px;
+}
+
 .about_header {
   top: 100px;
 }
@@ -1241,23 +1227,21 @@ form {
   top: 10;
 }
 
-.carousel a :hover {
-  height: 40px;
-  width: 40px;
-  background-color: red;
-}
-
-.test {
-  border: 1px solid yellow;
-  z-index: 102;
-}
-
 .carousel-control-next,
 .carousel-control-prev {
   position: absolute;
   top: 50%;
+  height: 50px;
+  width: 50px;
+  border-radius: 15px;
   transform: translateY(-50%);
   z-index: 100;
+}
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  height: 40px;
+  width: 40px;
+  transform: translateY(-50%);
 }
 
 .about-flex-container {
@@ -1265,7 +1249,6 @@ form {
   flex-wrap: nowrap;
   position: absolute;
   top: 240px;
-  border: 2px solid black;
 }
 
 .about-flex-container > p {
@@ -1299,7 +1282,7 @@ form {
 
 .download-resume-carousel {
   position: absolute;
-  margin-left: 66%;
+  margin-left: 50%;
   width: 300px;
   border: 1px solid black;
 }
@@ -1373,11 +1356,11 @@ form {
 .about-flex-container p {
   color: black;
   width: 50%;
-  margin: 12px 5px 5px;
-  margin-right: 10px;
+  padding: 15px 15px 5px 0;
   font-size: 14px;
   text-align: left;
   line-height: 1.4;
+  border: 2px solid gold;
 }
 
 .about-flex-container time {
@@ -1391,7 +1374,6 @@ form {
   top: 1233px;
   height: 220px;
   width: 100%;
-  border: 4px solid yellowgreen;
   background-color: #edeff5;
 }
 
@@ -1403,7 +1385,6 @@ form {
 @media only screen and (max-width: 900px) {
   .footer-left-container {
     width: 450px;
-    border: 1px solid #3a0707;
   }
 
   .footer-social-media {
@@ -1435,10 +1416,6 @@ form {
   bottom: 27px;
 }
 
-.footer-social-media ul {
-  border: 5px solid green;
-}
-
 .footer-social-media p {
   position: absolute;
   bottom: 27px;
@@ -1454,7 +1431,6 @@ form {
 
 .footer-flex-container div:nth-child(1) {
   height: 100%;
-  border: 2px solid #d39c9c;
 }
 
 .footer-flex-container div:nth-child(1) a {
@@ -1489,7 +1465,6 @@ form {
 }
 
 main {
-  border: 3px solid red;
   height: 100%;
 }
 

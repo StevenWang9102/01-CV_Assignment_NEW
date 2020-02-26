@@ -1,9 +1,18 @@
 // ------------------------------- General  ----------------------
+#carousel-section {
+  width: 100%;
+  top: 600px;
+  height: 600px;
+  background-color: rgb(233, 223, 243);
+  // border: 3px solid red;
+  position: absolute;
+}
+
 .carousel-item 
 {
   position: relative;
   height: 800px;
-  border: 11px solid darkblue;
+  // border: 5px solid darkblue;
 }
 
 #carousel-section p{
@@ -17,24 +26,6 @@
   object-fit:cover;
 }
 
-#carousel-area {
-  position: relative;
-  width: 100%;
-  top: 626px;
-  height: 600px;
-  background-color: rgb(233, 223, 243);
-  border: 1px solid red;
-}
-
-#carousel-section {
-  width: 100%;
-  top: 626px;
-  height: 600px;
-  background-color: rgb(233, 223, 243);
-  border: 3px solid red;
-  position: absolute;
-}
-
 .carousel-caption
 {
   position: absolute;
@@ -42,13 +33,12 @@
   left: 10% !important;
   top:30px;
   height: 500px;
-  border: 3px solid blueviolet ;
+  // border: 2px solid blueviolet ;
 }
 
 .carousel-indicators {
-
   position: absolute;
-  bottom: 30px; // 暂时位置
+  bottom: 30px; 
   z-index: 100;
 }
 
@@ -67,6 +57,11 @@
   left: 0px;
 }
 
+
+// ------------------- Slide No.1 -----------------------
+.carousel-caption .about-flex-container .slide-one-paragraph{
+  margin-right: 20px;
+}
 .about_header
 {
   @extend .carousel_public_header;
@@ -87,30 +82,32 @@
   top: 10;
 }
 
-.carousel a :hover {
-  height: 40px;
-  width: 40px;
-  background-color: red;
-}
-.test{
-  border: 1px solid yellow;
-  z-index:102;                        
-}
+
+
+// 左右箭头
 .carousel-control-next,
 .carousel-control-prev {
   position: absolute;
   top: 50%;
+  height: 50px;
+  width: 50px;
+  border-radius: 15px;
   transform: translateY(-50%);
   z-index: 100;
+  &:hover {
+    height: 40px;
+    width: 40px;
+    transform: translateY(-50%);
+  }
 }
+
 
 .about-flex-container {
   display: flex;
   flex-wrap: nowrap;
   position: absolute;
-  // width: 500px;
   top: 240px; 
-  border: 2px solid black;
+  // border: 2px solid black;
 }
 
 .about-flex-container > p {
@@ -122,6 +119,10 @@
   line-height: 1.4;
 }
 
+// .slide-one-paragrap{
+//   // 这是啥？？？
+//   margin-right: 151px;
+// }
 
 .about_icons{
     position: absolute;
@@ -129,7 +130,6 @@
     left: 320px;
 }
 
-// 
 .flex-icons{
     display: flex;
     flex-wrap: nowrap;
@@ -146,46 +146,14 @@
 }
 
 .download-resume-carousel
+// 这个位置还是需要精细化调整
 {
   @extend .download-resume-bottom;
   position: absolute;
-  margin-left: 66%;
+  margin-left: 50%;
   width: 300px;
   border: 1px solid black;
 }
-// .download-resume-bottom {
-//     @extend .download-resume;
-//     color: black;
-//     position: absolute;
-//     left: 10px;
-//     right: 70px;
-//     top: 80px;
-
-//     &:after {
-//         background-color: rgb(51, 44, 33);
-//     }
-//   }
-
-// .download-resume {
-//   opacity: 0.8;
-//   width: 350px;
-//   border: 1px solid;
-//   color: white;
-//   padding: 12px 50px 12px 50px;
-//   text-align: center;
-//   font-size: 12px;
-//   margin: 4px 2px;
-//   cursor: pointer;
-//   z-index: 300px;
-  
-//   &:hover {
-//     // font-weight: 200;
-//     color: crimson;
-//     text-decoration : none;
-//     background-color: rgba(253, 245, 249, 0.842);
-//     transition: ease 0.5s;
-//   }
-// }
 
 .about-flex-container
 {
@@ -228,7 +196,6 @@
 
 .carousel-third-container .about-flex-container p{
   width: 100%;
-  // margin-right: 115px;÷
 }
 
 .carousel-social-media 
@@ -261,13 +228,16 @@
 }
 
 .about-flex-container p{
+  // position: absolute;
+  // top: 100px;
+  // height: 200px;
   color: black;
   width: 50%;
-  margin: 12px 5px 5px;
-  margin-right: 10px;
+  padding: 15px 15px 5px 0;
   font-size: 14px;
   text-align: left;
   line-height: 1.4;
+  border: 2px solid gold;
 }
 
 .about-flex-container time{

@@ -78,7 +78,7 @@ a {
 .download-resume {
   opacity: 0.8;
   width: 350px;
-  border: 1px solid;
+  border: 1.5px solid;
   color: white;
   padding: 12px 50px 12px 50px;
   text-align: center;
@@ -88,7 +88,6 @@ a {
   z-index: 300px;
   
   &:hover {
-    // font-weight: 200;
     color: crimson;
     text-decoration : none;
     background-color: rgba(253, 245, 249, 0.842);
