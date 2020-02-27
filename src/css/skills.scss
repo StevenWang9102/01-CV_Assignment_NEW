@@ -1,43 +1,24 @@
-// ---------------- Media Query ----------------
-@media only screen and (max-width: 900px) {
-  .skill-wrapper-box {   
-    left: 10%;
-  }
-  .skills-header {
-    left: 10%;
-  }
-}
+// ---------------- General ----------------
 
 #skills-section {
-    position: relative;
-    top: 1231px;
-    height: 730px;
-    border: 2px solid gold;
-    z-index: 0;
+  position: relative;
+  top: 1200px;
+  height: 730px;
+  z-index: 0;
+  // border: 5px solid yellow;
 }
 
-.skills-content{
-  border: 2px solid yellow;
-}
-
-#skills-section img{
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit:cover;
-  z-index: -10;
-}
-  
 .skill-wrapper-box {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
   font-weight: bold;
   text-align: center;
   position: absolute;
-  left: 13%;
-  top: 150px;
+  top: 170px;
+  // border: 5px solid yellow;
 }
 
 .skill-wrapper-box > * {
@@ -46,106 +27,173 @@
   vertical-align: middle;
 }
 
+.skill-Excel {
+  height: 145px;
+  background-color: $basic-grey;
+  font-size: 90%;
+}
 
-  .skills-header-public {
-    position: relative;
-    font-size: 30px;
-    top: 78px;
-    font-weight: bold;
+.skill-Word {
+  height: 145px;
+  background-color: $basic-blue;
+  font-size: 90%;
+}
+
+.skill-Adobe {
+  height: 215px;
+  font-size: 130%;
+  background-color: $basic-blue;
+}
+
+.skill-Spanish {
+  height: 440px;
+  font-size: 280%;
+  background-color: $basic-blue;
+}
+
+.skill-PowerPoint {
+  height: 295px;
+  width: 35%;
+  position: absolute;
+  top: 145px;
+  background-color: $basic-grey;
+  font-size: 200%;
+  // border: 1px solid red;
+}
+
+.skill-French {
+  height: 225px;
+  width: 25%;
+  position: absolute;
+  top: 215px;
+  left: 35%;
+  font-size: 130%;
+  background-color: $basic-grey;
+  // border: 1px solid greenyellow;
+}
+
+// 屏幕小于900px的情况
+@media only screen and (max-width: 900px) {
+  .skill-wrapper-box {
+    left: 5%;
+    width: 760px;
   }
-  
+
   .skills-header {
-    @extend .skills-header-public;
-    position: absolute;
-    color: white;
-    left: 13%;
+    left: 5%;
   }
-  
-  .skills-header::after {
-    content: '';
-    display: block;
-    width: 50px;
-    border: 3px solid red;
-    margin: 28px 0;
-  }
-  
   .skill-Excel {
-    flex-grow: 1;
-    height: 145px;
-    width: 145px;
-    // weight: 145px;
-    background-color: $basic-grey;
-    font-size: 90%;
-  }
-  
-  .skill-Word {
-    flex-grow: 1;
-    height: 145px;
-    width: 145px;
-    background-color: $basic-blue;
-    font-size: 90%;
-  }
-  
-  .skill-Adobe {
-    flex-grow: 2;
-    height: 215px;
-    width: 215px;
-    font-size: 130%;
-    background-color: $basic-blue;
-  }
-  
-  .skill-Spanish {
-    flex-grow: 4;
-    height: 440px;
-    width: 440px;
-    font-size: 280%;
-    background-color: $basic-blue;
-  }
-  
-  .skill-PowerPoint {
-    height: 295px;
-    width: 360px;
-    position: absolute;
-    top: 145px;
-    background-color: $basic-grey;
-    font-size: 200%;
-  }
-  
-  .skill-French {
-    height: 225px;
-    width: 250px;
-    position: absolute;
-    top: 215px;
-    left: 313px;
-    font-size: 130%;
-    background-color: $basic-grey;
+    flex: 1;
   }
 
-  //Skills Name and Title
+  .skill-Word {
+    flex: 1;
+  }
+
+  .skill-Adobe {
+    flex: 1.5;
+  }
+
+  .skill-Spanish {
+    flex: 3;
+  }
+
+  .skill-PowerPoint {
+    width: 266px;
+  }
+
+  .skill-French {
+    width: 178px;
+  }
+}
+
+// 屏幕大于900px的情况
+@media only screen and (min-width: 900px) {
+  .skill-wrapper-box {
+    width: 960px;
+    left: 15%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .skills-header {
+    left: 15%;
+  }
+
+  .skill-Excel,
+  .skill-Word {
+    flex: 1;
+  }
+
+  .skill-Adobe {
+    flex: 1.5;
+  }
+
+  .skill-Spanish {
+    flex: 3;
+  }
+
+  .skill-PowerPoint {
+    width: 35%;
+  }
+
+  .skill-French {
+    width: 25%;
+  }
+}
+
+#skills-section img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10;
+}
+
+.skills-header-public {
+  position: relative;
+  font-size: 30px;
+  top: 78px;
+  font-weight: bold;
+}
+
+.skills-header {
+  @extend .skills-header-public;
+  position: absolute;
+  color: white;
+  left: 13%;
+}
+
+.skills-header::after {
+  content: "";
+  display: block;
+  width: 50px;
+  border: 3px solid red;
+  margin: 28px 0;
+}
+
+// ---------------------- Skills Name and Title ----------------------
 .dark_red_font {
-    color: $dark-red;
-    position: relative;
-    top: 40%;
-  }
-  
-  .dark_bule_font {
-    color: $dark-blue;
-    position: relative;
-    top: 40%;
-  }
-  
-  .smaller-font {
-    position: relative;
-    top: 40%;
-    font-size: 60%;
-  }
-  
-  
-  form {
-    position: relative;
-    left: 35px;
-    top: 110px;
-  }
-  
-  
-  
+  color: $dark-red;
+  position: relative;
+  top: 40%;
+}
+
+.dark_bule_font {
+  color: $dark-blue;
+  position: relative;
+  top: 40%;
+}
+
+.smaller-font {
+  position: relative;
+  top: 40%;
+  font-size: 60%;
+}
+
+form {
+  position: relative;
+  left: 35px;
+  top: 110px;
+}

@@ -3,10 +3,10 @@
 
 #footer-section{
     position: relative;
-    top: 1233px;
+    top: 1180px;
     height: 220px;
     width: 100%;
-    // border: 4px solid yellowgreen ;
+    border-top: 2px solid rgb(25, 26, 24) ;
     background-color: $basic-grey;
 }
 
@@ -19,7 +19,6 @@
 @media only screen and (max-width: 900px) {
     .footer-left-container {
       width: 450px;
-    //   border: 1px solid rgb(58, 7, 7) ;
     }
     .footer-social-media
     {
@@ -55,10 +54,6 @@
     bottom: 27px;
 }
 
-.footer-social-media ul
-{
-    // border: 5px solid green;
-}
 
 .footer-social-media p{
     position: absolute;
@@ -100,7 +95,7 @@
     flex-wrap: nowrap;
     position: absolute;
     margin-left: 90px;
-    top: 50px;
+    top: 89px;
 }
 
 .footer-social-media ul >li{
