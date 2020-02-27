@@ -79,7 +79,7 @@
     width: 760px;
   }
 
-  .skills-header {
+  #skills-section h2 {
     left: 5%;
   }
   .skill-Excel {
@@ -116,7 +116,7 @@
     margin-right: auto;
   }
 
-  .skills-header {
+  #skills-section h2 {
     left: 15%;
   }
 
@@ -158,7 +158,7 @@
   font-weight: bold;
 }
 
-.skills-header {
+#skills-section h2 {
   @extend .skills-header-public;
   position: absolute;
   color: white;
@@ -170,7 +170,7 @@
 
 
 // ---------------------- Skills Name and Title ----------------------
-.dark_red_font {
+.skill-wrapper-box div:nth-child(2) {
   color: $dark-red;
   position: relative;
   top: 40%;
@@ -182,10 +182,10 @@
   top: 40%;
 }
 
-.smaller-font {
+.skill-wrapper-box div:first-child {
   position: relative;
   top: 40%;
-  font-size: 60%;
+  font-size: 75%;
 }
 
 form {

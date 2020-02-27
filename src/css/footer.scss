@@ -63,23 +63,23 @@
     margin-left: 90px;
 }
 
-.footer-flex-container{
+#footer-section{
     display: flex;
     flex-wrap: nowrap;
 }
 
-.footer-flex-container div:nth-child(1){
+#footer-section div:nth-child(1){
     height: 100%;
     // border: 2px solid rgb(211, 156, 156);
 }
 
-.footer-flex-container div:nth-child(1) a {
+#footer-section div:nth-child(1) a {
     position: absolute;
     right: 0;
 ;}
 
 
-.footer-flex-container div:nth-child(2){
+#footer-section div:nth-child(2){
     height: 100%;
 }
 

@@ -308,7 +308,7 @@ a {
   height: 2700px;
 }
 
-.underHeaderRedStrip, .education_header::after, .carousel_experience_header::after, .carousel-first-container h2::after, .skills-header::after, .contact-me-header::after, .quick-id-header::after {
+.underHeaderRedStrip, .carousel-secend-container h2::after, .education_header::after, .carousel-first-container h2::after, #skills-section h2::after, .information-section-right h2::after, .information-section-left h2::after {
   content: "";
   display: block;
   width: 55px;
@@ -362,11 +362,11 @@ a {
   background: #bcc8dc;
 }
 
-.quick-id-header {
+.information-section-left h2 {
   color: white;
   left: 4%;
 }
-.contact-me-header {
+.information-section-right h2 {
   left: 35px;
   color: black;
 }
@@ -376,14 +376,14 @@ a {
   top: 120px;
 }
 
-.link {
+.information-section-left a {
   color: white;
   cursor: pointer;
   text-decoration: none;
   font-size: 15px;
 }
 
-.left-table-font {
+.table-left th {
   font-size: 20px;
   width: 40%;
 }
@@ -397,14 +397,21 @@ a {
   left: 0;
 }
 
-.submit-button {
+.information-section-right textarea {
+  position: absolute;
+  top: 100px;
+  left: 5px;
+}
+
+.information-section-right button {
   background-color: #bcc8dc;
   color: white;
   border: 0 solid #555555;
   font-size: 18px;
   font-weight: 700;
-  position: relative;
   width: 140px;
+  position: absolute;
+  top: 230px;
   left: 140px;
   line-height: 2.5;
   cursor: pointer;
@@ -414,8 +421,12 @@ a {
   color: #314a74;
 }
 
-.inline-block {
+.information-section-right div:nth-child(1), .information-section-right div:nth-child(2) {
   display: inline-block;
+}
+
+.information-section-right input::-webkit-input-placeholder, .information-section-right textarea::-webkit-input-placeholder {
+  color: gray;
 }
 
 section td {
@@ -756,7 +767,7 @@ a {
   height: 2700px;
 }
 
-.underHeaderRedStrip, .education_header::after, .carousel_experience_header::after, .carousel-first-container h2::after, .skills-header::after, .quick-id-header::after, .contact-me-header::after {
+.underHeaderRedStrip, .carousel-secend-container h2::after, .education_header::after, .carousel-first-container h2::after, #skills-section h2::after, .information-section-left h2::after, .information-section-right h2::after {
   content: "";
   display: block;
   width: 55px;
@@ -810,11 +821,11 @@ a {
   background: #bcc8dc;
 }
 
-.quick-id-header {
+.information-section-left h2 {
   color: white;
   left: 4%;
 }
-.contact-me-header {
+.information-section-right h2 {
   left: 35px;
   color: black;
 }
@@ -824,14 +835,14 @@ a {
   top: 120px;
 }
 
-.link {
+.information-section-left a {
   color: white;
   cursor: pointer;
   text-decoration: none;
   font-size: 15px;
 }
 
-.left-table-font {
+.table-left th {
   font-size: 20px;
   width: 40%;
 }
@@ -845,14 +856,21 @@ a {
   left: 0;
 }
 
-.submit-button {
+.information-section-right textarea {
+  position: absolute;
+  top: 100px;
+  left: 5px;
+}
+
+.information-section-right button {
   background-color: #bcc8dc;
   color: white;
   border: 0 solid #555555;
   font-size: 18px;
   font-weight: 700;
-  position: relative;
   width: 140px;
+  position: absolute;
+  top: 230px;
   left: 140px;
   line-height: 2.5;
   cursor: pointer;
@@ -862,8 +880,12 @@ a {
   color: #314a74;
 }
 
-.inline-block {
+.information-section-right div:nth-child(1), .information-section-right div:nth-child(2) {
   display: inline-block;
+}
+
+.information-section-right input::-webkit-input-placeholder, .information-section-right textarea::-webkit-input-placeholder {
+  color: gray;
 }
 
 section td {
@@ -894,7 +916,7 @@ input {
   color: black;
 }
 
-.header-background {
+#header-background {
   position: relative;
   top: 0;
 }
@@ -1069,7 +1091,7 @@ input {
     width: 760px;
   }
 
-  .skills-header {
+  #skills-section h2 {
     left: 5%;
   }
 
@@ -1105,7 +1127,7 @@ input {
     margin-right: auto;
   }
 
-  .skills-header {
+  #skills-section h2 {
     left: 15%;
   }
 
@@ -1140,19 +1162,19 @@ input {
   z-index: -10;
 }
 
-.skills-header-public, .carousel_public_header, .education_header, .carousel_experience_header, .carousel-first-container h2, .skills-header, .quick-id-header, .contact-me-header {
+.skills-header-public, .carousel_public_header, .carousel-secend-container h2, .education_header, .carousel-first-container h2, #skills-section h2, .information-section-left h2, .information-section-right h2 {
   position: relative;
   font-size: 30px;
   top: 78px;
   font-weight: bold;
 }
 
-.skills-header {
+#skills-section h2 {
   position: absolute;
   color: white;
   left: 13%;
 }
-.dark_red_font {
+.skill-wrapper-box div:nth-child(2) {
   color: #d93347;
   position: relative;
   top: 40%;
@@ -1164,10 +1186,10 @@ input {
   top: 40%;
 }
 
-.smaller-font {
+.skill-wrapper-box div:first-child {
   position: relative;
   top: 40%;
-  font-size: 60%;
+  font-size: 75%;
 }
 
 form {
@@ -1209,6 +1231,7 @@ form {
 .carousel-caption {
   top: 30px;
   position: absolute;
+  line-height: 1.4;
   width: 80% !important;
   left: 10% !important;
   height: 500px;
@@ -1228,7 +1251,7 @@ form {
   z-index: 10;
 }
 
-.carousel_public_header, .education_header, .carousel_experience_header, .carousel-first-container h2 {
+.carousel_public_header, .carousel-secend-container h2, .education_header, .carousel-first-container h2 {
   font-weight: 600;
   color: black;
   position: absolute;
@@ -1236,15 +1259,8 @@ form {
   left: 0px;
 }
 
-.carousel-caption .about-flex-container .slide-one-paragraph {
-  margin-right: 20px;
-}
-
 .carousel-first-container h2 {
   content: "";
-  top: 100px;
-}
-.carousel_experience_header {
   top: 100px;
 }
 .education_header {
@@ -1284,6 +1300,7 @@ form {
   color: black;
   width: 15%;
   margin: 10px;
+  margin-right: 20px;
   text-align: left;
   line-height: 1.4;
 }
@@ -1308,6 +1325,9 @@ form {
   top: 50px;
 }
 
+.carousel-secend-container h2 {
+  top: 100px;
+}
 .download-resume-carousel {
   position: absolute;
   margin-left: 50%;
@@ -1322,9 +1342,13 @@ form {
   top: 200px;
 }
 
+.about-flex-container > li {
+  padding: 0 10px 0 0;
+}
+
 .carousel-secend-container .about-flex-container > li {
   width: 33.3%;
-  margin: 4px;
+  margin: 5px;
   text-align: left;
   font-size: 20px;
 }
@@ -1384,7 +1408,7 @@ form {
 .about-flex-container p {
   color: black;
   width: 50%;
-  padding: 15px 15px 5px 0;
+  padding: 15px 20px 5px 0;
   font-size: 14px;
   text-align: left;
   line-height: 1.4;
@@ -1452,21 +1476,21 @@ form {
   margin-left: 90px;
 }
 
-.footer-flex-container {
+#footer-section {
   display: flex;
   flex-wrap: nowrap;
 }
 
-.footer-flex-container div:nth-child(1) {
+#footer-section div:nth-child(1) {
   height: 100%;
 }
 
-.footer-flex-container div:nth-child(1) a {
+#footer-section div:nth-child(1) a {
   position: absolute;
   right: 0;
 }
 
-.footer-flex-container div:nth-child(2) {
+#footer-section div:nth-child(2) {
   height: 100%;
 }
 
