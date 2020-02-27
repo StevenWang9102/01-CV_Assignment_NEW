@@ -304,7 +304,16 @@ a {
 
 .main-container {
   position: relative;
-  height: 2800px;
+  width: 100%;
+  height: 2700px;
+}
+
+.underHeaderRedStrip, .education_header::after, .carousel_experience_header::after, .carousel-first-container h2::after, .skills-header::after, .contact-me-header::after, .quick-id-header::after {
+  content: "";
+  display: block;
+  width: 55px;
+  border: 3px solid #d93347;
+  margin: 23px 0;
 }
 
 #form-section {
@@ -357,28 +366,10 @@ a {
   color: white;
   left: 4%;
 }
-
-.quick-id-header::after {
-  content: "";
-  display: block;
-  width: 50px;
-  border: 3px solid #d93347;
-  margin: 28px 0;
-}
-
 .contact-me-header {
   left: 35px;
   color: black;
 }
-
-.contact-me-header::after {
-  content: "";
-  display: block;
-  width: 50px;
-  border: 3px solid #d93347;
-  margin: 28px 0;
-}
-
 .table-left {
   position: relative;
   left: 4%;
@@ -761,7 +752,16 @@ a {
 
 .main-container {
   position: relative;
-  height: 2800px;
+  width: 100%;
+  height: 2700px;
+}
+
+.underHeaderRedStrip, .education_header::after, .carousel_experience_header::after, .carousel-first-container h2::after, .skills-header::after, .quick-id-header::after, .contact-me-header::after {
+  content: "";
+  display: block;
+  width: 55px;
+  border: 3px solid #d93347;
+  margin: 23px 0;
 }
 
 #form-section {
@@ -814,28 +814,10 @@ a {
   color: white;
   left: 4%;
 }
-
-.quick-id-header::after {
-  content: "";
-  display: block;
-  width: 50px;
-  border: 3px solid #d93347;
-  margin: 28px 0;
-}
-
 .contact-me-header {
   left: 35px;
   color: black;
 }
-
-.contact-me-header::after {
-  content: "";
-  display: block;
-  width: 50px;
-  border: 3px solid #d93347;
-  margin: 28px 0;
-}
-
 .table-left {
   position: relative;
   left: 4%;
@@ -939,53 +921,55 @@ input {
   position: absolute;
   top: 300px;
   left: 0;
-  height: 100px;
+  height: 500px;
   width: 100%;
-  z-index: 10000;
+  z-index: 100;
 }
 
 .author-hearder, .author-img {
   position: absolute;
   top: 0;
-  left: 30%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 600px;
   color: white;
+  text-align: center;
   font-size: 70px;
   font-weight: 500;
-  z-index: 1;
 }
-
-@media only screen and (max-width: 900px) {
-  .author-hearder, .author-img {
-    left: 220px;
-  }
-}
-.business_expert {
+.author-hearder span, .author-img span {
   position: absolute;
   top: 90px;
-  left: 72px;
+  left: 50%;
+  width: 400px;
+  transform: translateX(-50%);
   letter-spacing: 6px;
   font-size: 25px;
   font-weight: 300;
   color: #bcc8dc;
-  z-index: 1;
+}
+
+.author-img {
+  position: absolute;
+  top: 200px;
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  border: 10px solid white;
+  z-index: 100;
+}
+
+.author-hearder, .author-img {
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header-background-img {
   position: absolute;
-  height: 600px;
+  height: 1200px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.author-img {
-  width: 250px;
-  height: 250px;
-  border-radius: 250px;
-  border: 8px solid white;
-  top: 200px;
-  margin-left: 100px;
   z-index: 10;
 }
 
@@ -1156,7 +1140,7 @@ input {
   z-index: -10;
 }
 
-.skills-header-public, .carousel_public_header, .education_header, .carousel_experience_header, .about_header, .skills-header, .quick-id-header, .contact-me-header {
+.skills-header-public, .carousel_public_header, .education_header, .carousel_experience_header, .carousel-first-container h2, .skills-header, .quick-id-header, .contact-me-header {
   position: relative;
   font-size: 30px;
   top: 78px;
@@ -1168,15 +1152,6 @@ input {
   color: white;
   left: 13%;
 }
-
-.skills-header::after {
-  content: "";
-  display: block;
-  width: 50px;
-  border: 3px solid red;
-  margin: 28px 0;
-}
-
 .dark_red_font {
   color: #d93347;
   position: relative;
@@ -1212,11 +1187,16 @@ form {
 .carousel-item {
   position: relative;
   height: 800px;
+  z-index: 20;
 }
 
 #carousel-section p {
   font-family: serif, Times;
   font-size: 16px;
+}
+
+.carousel-inner {
+  border: 2px solid goldenrod;
 }
 
 .carousel-inner img {
@@ -1227,10 +1207,10 @@ form {
 }
 
 .carousel-caption {
+  top: 30px;
   position: absolute;
   width: 80% !important;
   left: 10% !important;
-  top: 30px;
   height: 500px;
 }
 
@@ -1243,10 +1223,12 @@ form {
 .carousel-indicators li {
   height: 10px;
   width: 50px;
+  border: 0.5px solid rgba(0, 0, 0, 0.438);
+  border-radius: 10px;
   z-index: 10;
 }
 
-.carousel_public_header, .education_header, .carousel_experience_header, .about_header {
+.carousel_public_header, .education_header, .carousel_experience_header, .carousel-first-container h2 {
   font-weight: 600;
   color: black;
   position: absolute;
@@ -1258,21 +1240,20 @@ form {
   margin-right: 20px;
 }
 
-.about_header {
+.carousel-first-container h2 {
+  content: "";
   top: 100px;
 }
-
 .carousel_experience_header {
   top: 100px;
 }
-
 .education_header {
   top: 100px;
 }
-
 .carousel-item .img-1 {
   width: 100%;
   top: 10;
+  z-index: 30;
 }
 
 .carousel-control-next,
@@ -1302,7 +1283,6 @@ form {
 .about-flex-container > p {
   color: black;
   width: 15%;
-  max-width: 70%;
   margin: 10px;
   text-align: left;
   line-height: 1.4;
@@ -1377,8 +1357,8 @@ form {
 
 .carousel-social-media {
   position: absolute;
-  left: 50%;
-  top: 100px;
+  left: 51%;
+  top: 140px;
   height: 40px;
   width: 200px;
 }
@@ -1408,7 +1388,6 @@ form {
   font-size: 14px;
   text-align: left;
   line-height: 1.4;
-  border: 2px solid gold;
 }
 
 .about-flex-container time {

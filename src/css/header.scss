@@ -36,60 +36,67 @@ $dark-blue: #314a74;
   position: absolute;
   top: 300px;
   left: 0;
-  height: 100px;
+  height: 500px;
   width: 100%;
-  // border: 5px solid blue;
-  z-index: 10000;
+  z-index: 100;
+  // border: 2px solid greenyellow;
 }
 
 .author-hearder {
   position: absolute;
   top: 0;
-  left: 30%;
+  left: 50%;
+  transform: translateX(-50%);  
   width: 600px;
-  // margin: 0 auto;
   color: white;
+  text-align: center;
   font-size: 70px;
   font-weight: 500;
-  z-index: 1;
+  // z-index: 1;
+  // border: 2px solid greenyellow;
+
+  & span{
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 400px;
+    transform: translateX(-50%);  
+    letter-spacing: 6px;
+    font-size: 25px;
+    font-weight: 300;
+    // border: 2px solid greenyellow;
+    color: $basic-blue;
+    // z-index: 1;
+    }
 }
 
-// 屏幕小于900px的情况
-@media only screen and (max-width: 900px) {
-  .author-hearder, .author-img  {
-    left: 220px;
-  }
-  
-}
-
-.business_expert {
-  position: absolute;
-  top: 90px;
-  left: 72px;
-  letter-spacing: 6px;
-  font-size: 25px;
-  font-weight: 300;
-  color: $basic-blue;
-  z-index: 1;
-}
-
-.header-background-img {
-  position: absolute;
-  height: 600px;
-  width: 100%;
-  object-fit: cover;
-}
 
 .author-img {
   @extend .author-hearder;
+  position: absolute;
+  top: 200px;
   width: 250px;
   height: 250px;
   border-radius: 250px;
-  border: 8px solid white;
-  top: 200px;
-  margin-left: 100px;
+  border: 10px solid white;
+  z-index: 100;
+}
+
+
+.author-hearder, .author-img  {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.header-background-img {
+  position: absolute;
+  height: 1200px;
+  width: 100%;
+  object-fit: cover;
   z-index: 10;
 }
+
 
 .download-resume-top {
   @extend .download-resume;

@@ -98,5 +98,14 @@ a {
 
 .main-container{
   position: relative;
-  height: 2800px;
+  width: 100%;
+  height: 2700px;
+}
+
+.underHeaderRedStrip{
+    content: '';
+    display: block;
+    width: 55px;
+    border: 3px solid $dark-red;
+    margin: 23px 0;
 }
