@@ -1,42 +1,14 @@
-@import './core/constants';
-@import './core/mixins';
-
-
 #form-section
 {
   position: relative;
-  top: 1210px;
-  height: 604px;
-  margin-top: -10px;
+  top: 1200px;
+  height: 600px;
   // border: 2px solid yellow;
 }
 
-// 屏幕小于900px的情况
-@media only screen and (max-width: 900px) {
-  .information-section {
-    width: 450px;
-  }
-  .information-section-right
-  {
-    left: 450px;
-  }
-}
-
-// 屏幕大于900px的情况
-@media only screen and (min-width: 900px) {
-  .information-section {
-    width: 50%;
-  }
-  .information-section-right
-  {
-    left: 50%
-  }
-
-}
-
-.information-section {
+.public-information-section {
   position: absolute;
-  display: inline-block;
+  // display: inline-block;
   height: 580px;
   padding: 30px;
   margin: 0;
@@ -47,15 +19,40 @@
 }
 
 .information-section-left {
-  @extend .information-section;
+  @extend .public-information-section;
   top: 0px;
 }
 
 .information-section-right {
-  @extend .information-section;
+  @extend .public-information-section;
   display: inline-block;
   background: #bcc8dc;
 }
+
+// When screen size < 900px
+@media only screen and (max-width: 900px) {
+  .public-information-section {
+    width: 450px;
+  }
+  .information-section-right
+  {
+    left: 450px;
+  }
+}
+
+// When screen size > 900px
+@media only screen and (min-width: 900px) {
+  .public-information-section {
+    width: 50%;
+  }
+  .information-section-right
+  {
+    left: 50%
+  }
+
+}
+
+
 
 .information-section-left h2 {
   @extend .skills-header-public;

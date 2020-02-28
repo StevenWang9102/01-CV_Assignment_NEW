@@ -1,50 +1,15 @@
-//--------------------------- HEADER INFORMATION ---------------------------
-@import "./global";
-@import "./form.scss";
-
-$basic-blue: #bcc8dc;
-$basic-grey: #edeff5;
-$dark-red: #d93347;
-$dark-blue: #314a74;
-
-#header-background {
-  position: relative;
-  top: 0;
-}
-
-#header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  padding: 60px 60px 0;
-
-  a {
-    text-decoration: none;
-  }
-
-  .download-btn {
-    float: right;
-    color: white;
-    background-color: none;
-    border: 1px solid white;
-    padding: 10px 30px;
-  }
-}
-
 .header-container {
   position: absolute;
-  top: 300px;
+  top: 0;
   left: 0;
-  height: 500px;
+  height: 600px;
   width: 100%;
-  z-index: 100;
-  // border: 2px solid greenyellow;
+  // border: 5px solid greenyellow;
 }
 
 .author-hearder {
   position: absolute;
-  top: 0;
+  top: 200px;
   left: 50%;
   transform: translateX(-50%);  
   width: 600px;
@@ -52,49 +17,40 @@ $dark-blue: #314a74;
   text-align: center;
   font-size: 70px;
   font-weight: 500;
-  // z-index: 1;
-  // border: 2px solid greenyellow;
+  letter-spacing: 5px;
 
   & span{
     position: absolute;
     top: 90px;
-    left: 50%;
     width: 400px;
+    left: 50%;
     transform: translateX(-50%);  
-    letter-spacing: 6px;
     font-size: 25px;
     font-weight: 300;
     // border: 2px solid greenyellow;
     color: $basic-blue;
-    // z-index: 1;
     }
 }
 
-
-.author-img {
-  @extend .author-hearder;
+ .author-img  {
   position: absolute;
-  top: 200px;
+  left: 50%;
+  top: 480px;
   width: 250px;
   height: 250px;
   border-radius: 250px;
   border: 10px solid white;
-  z-index: 100;
+  z-index: 300;
+  transform: translateX(-50%);
 }
 
 
-.author-hearder, .author-img  {
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-
-.header-background-img {
+#upper-background img {
   position: absolute;
   height: 1200px;
   width: 100%;
   object-fit: cover;
-  z-index: 10;
+  z-index: -200;
 }
 
 
@@ -103,7 +59,7 @@ $dark-blue: #314a74;
   position: fixed;
   top: 50px;
   right: 50px;
-  z-index: 100;
+  z-index: 300;
 }
 
 .home-btn {
@@ -114,10 +70,11 @@ $dark-blue: #314a74;
   font-size: $font-l;
   font-weight: bold;
   float: left;
-  z-index: 100;
+  z-index: 300;
 
   &:hover {
-    color: $cyan;
+    color: $basic-blue;
     text-decoration: none;
+    cursor: pointer;
   }
 }

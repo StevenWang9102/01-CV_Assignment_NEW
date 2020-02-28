@@ -38,7 +38,7 @@
         
         <!------------------- Header  ------------------>
         <section id="header-background">
-          <a class="home-btn" href="#top">HOME</a>
+          <h1 class="home-btn" href="#top">HOME</h1>
 
           <a class="download-resume-top" href="#top">DOWNLOAD MY FULL RESUME</a>
 
@@ -53,12 +53,12 @@
         </section>
 
         <!---------------------- BackGround Image ---------------------->
-        <section class="header-background-img">
+        <section id="upper-background">
           <img
-          src="./img/upperBackground_.png"
+          src="./img/upperBackground_2.png"
           alt="Steven Wang"
           />
-       </section>
+        </section>
 
 
         <!---------------------- Carousel Area --------------------->
@@ -114,6 +114,7 @@
                   </ul>
                 </div>
 
+                <!-- Paragraph -->
                 <div class="about-flex-container">
                   <p>
                     I'm a paragraph. Click here to add your own text and edit
@@ -151,6 +152,7 @@
 
                 <h2>EXPERIENCE</h2>
 
+                <!-- Paragraph -->
                 <ol class="about-flex-container">
                   <li>
                     <h3>Budget Director <br/> @Wix.com</h3>
@@ -196,17 +198,19 @@
                 class="d-block w-100 slide-img-3"
                 alt=""
               />
+
               <div
                 class="carousel-caption d-none d-md-block carousel-third-container"
               >
                 <div class="carousel1-flex-container1">
-                  <h2 class="education_header">EDUCATION</h2>
+                  <h2>EDUCATION</h2>
 
                   <a class="download-resume-carousel" href="#top"
                     >DOWNLOAD MY FULL RESUME
                   </a>
                 </div>
 
+                <!-- Paragraph -->
                 <ol class="about-flex-container">
                   <li>
                     <h3>
@@ -249,7 +253,7 @@
             </div>
           </div>
 
-          <!----------- Page-turner ---------->
+          <!----------- Page-turner Previous ---------->
           <a
             class="carousel-control-prev"
             href="#carousel-section"
@@ -260,6 +264,7 @@
             <span class="sr-only">Previous</span>
           </a>
 
+          <!----------- Page-turner Next ---------->
           <a
             class="carousel-control-next"
             href="#carousel-section"
@@ -275,11 +280,9 @@
         <section id="skills-section">
 
           <img src="./img/upperBackground.png" alt="bg" />
-
           <h2>SKILLS</h2>
 
-          
-          <!-- Skills wrapper box -->
+          <!-- Skills Display Wrapper Box -->
           <ul class="skill-wrapper-box">
             <li class="skill-Excel">
               <div>Microsoft Excel</div>
@@ -318,6 +321,7 @@
           <div class="information-section-left">
             <h2>QUICK ID</h2>
 
+            <!-- Left Form -->
             <table class="table-left">
               <tr>
                 <th>Phone</th>
@@ -341,11 +345,12 @@
               </tr>
               <tr>
                 <th>Address</th>
-                <td>Otheha, NorthShor Auckland</td>
+                <td>Oteha, NorthShore Auckland</td>
               </tr>
             </table>
           </div>
 
+          <!-- Right Form -->
           <div class="information-section-right">
             <h2>CONTACT ME</h2>
 
@@ -406,9 +411,9 @@
         <!------------------ FOOTER ------------------>
         <footer id="footer-section">
           
-          <!-- Left Section -->
+          <!-- Left Resume -->
           <div class="footer-left-container">
-            <a class="download-resume-bottom" href="#top"
+            <a class="download-resume-bottom" href="#bottom"
               >DOWNLOAD MY FULL RESUME
             </a>
 
@@ -417,21 +422,21 @@
             </p>
           </div>
 
-          <!-- Right Section -->
+          <!-- Right Social Media-->
           <div class="footer-social-media">
             <ul>
               <li>
-                <a href="#top">
+                <a href="#bottom">
                   <img src="./img/linkin.png" alt="lk" />
                 </a>
               </li>
               <li>
-                <a href="#top">
+                <a href="#bottom">
                   <img src="./img/twitter.png" alt="tw" />
                 </a>
               </li>
               <li>
-                <a href="#top">
+                <a href="#bottom">
                   <img src="./img/facebook.png" alt="lk" />
                 </a>
               </li>
@@ -446,13 +451,7 @@
 
     <script>
       $(".carousel").carousel({
-        interval: 100222222200
-      });
-
-      // carousel-indicators
-      $(".information-section-right input").click(function() {
-        // $( ".slide-img-1, .slide-img-2, .slide-img-3" ).fadeOut( "slow");
-        // $(".information-section-right input").css("background-color", "white");
+        interval: 20000
       });
 
       $(".carousel-control-prev").click(function() {

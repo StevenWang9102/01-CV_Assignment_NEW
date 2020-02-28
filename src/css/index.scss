@@ -4,33 +4,3 @@
 @import './skills.scss';
 @import './carousel.scss';
 @import './footer.scss';
-
-
-
-$basic-blue: #bcc8dc;
-$basic-grey: #edeff5;
-$dark-red: #d93347;
-$dark-blue: #314a74;
-
-
-.HOME {
-  position: fixed;
-  left: 70px;
-  top: 68px;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.HOME:hover {
-  color: $basic-blue;
-}
-
-header {
-  height: 200px;
-}
-
-section{
-  position: static;
-}
-
