@@ -7,109 +7,103 @@
 }
 
 .carousel-item {
+  // Each Slide
   position: relative;
   height: 600px;
   width: 100%;
   z-index: 100;
-  // border: 2px solid blue;
 }
 
 .carousel-inner img {
   width: 100%;
   height: 600px;
-  opacity: 0.8;
+  opacity: 0.7;
   object-fit: cover;
 }
 
 #carousel-section p {
   font-family: serif, Times;
-  font-size: 16px;
+  font-size: $font-small;
 }
 
 .carousel-caption {
-  // Content container
+  // content container
   position: absolute;
   height: 500px;
   width: 80%;
   left: 10%;
   top: 30px;
   line-height: 1.4;
-  // border: 2px solid blueviolet;
 }
 
 .carousel-indicators {
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
   z-index: 300;
 
   & li {
-    height: 10px;
-    width: 50px;
+    height: 12px;
+    width: 60px;
     border: 1px solid $dark-blue;
-    border-radius: 10px;
+    border-radius: 20px;
   }
 }
 
 // ------------------------------ Public -----------------------
-.carousel_public_header {
-  position: absolute;
-  left: 0px;
-  color: black;
-  font-size: 30px;
-  font-weight: 600;
-}
 
 .about-flex-container {
   display: flex;
   flex-wrap: nowrap;
   position: absolute;
-  border: 2px solid yellowgreen;
   top: 210px;
 }
 
 .about-flex-container p {
   color: black;
-  padding: 15px 25px 15px 0;
-  font-size: 14px;
+  padding: 15px 20px 15px 0;
+  font-size: $font-small;
   text-align: left;
   line-height: 1.4;
 }
 
-.about-flex-container li{
-  margin-right: 15px;
+.about-flex-container li {
+  margin-right: 10px;
 }
 
 .carousel-item h3 {
   color: black;
   text-align: left;
-  font-size: 18px;
+  font-size: $font-middle;
   font-weight: 900;
 }
 
 .about-flex-container time {
-  color: rgb(159, 203, 245);
-  font-size: 18px;
+  color: $light-blue;
+  font-size: $font-middle;
   font-weight: 700;
 }
 
-// ------------------ Page Tunner ------------------
+// ------------------------- Page Tunner -------------------
 .carousel-control-next,
 .carousel-control-prev {
   position: absolute;
   top: 50%;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   margin: 20px;
   border-radius: 50px;
+  border: 2px solid $basic-black;
   transform: translateY(-50%);
   z-index: 300;
-  // border: 2px solid blueviolet;
 
   &:hover {
     transition: ease 0.5s;
   }
 }
 
+.carousel-control-prev img, .carousel-control-next img{
+  height: 20px;
+}
 // ------------------------------ Social Media -----------------------
 .carousel-social-media {
   position: absolute;
@@ -117,7 +111,6 @@
   top: 140px;
   height: 40px;
   width: 150px;
-  border: 4px solid greenyellow;
 }
 
 .carousel-social-media ul {
@@ -129,63 +122,65 @@
   left: 0;
   top: 0;
   z-index: 300;
-  // border: 2px solid rgb(115, 133, 89);
 }
 
 .carousel-social-media img {
   height: 30px;
   width: 30px;
-  border-radius: 5%;
+  border-radius: 15%;
   margin-right: 15px;
+
   &:hover {
     cursor: pointer;
+    width: 32px;
+    height: 32px;
+    transform: translateY(-5%);
   }
 }
 
 // ------------------------------ First Slide -----------------------
-.carousel-first-container h2 {
-  @extend .carousel_public_header;
+
+.carousel-first-container h2,
+.carousel-secend-container h2,
+.carousel-third-container h2 
+ {
+  position: absolute;
   top: 100px;
+  left: 0px;
+  color: black;
+  font-size: $font-extra-large;
+  font-weight: 600;
 
   &::after {
     @extend .underHeaderRedStrip;
   }
+}
+
+.carousel-first-container .about-flex-container p{
+  flex: 1;
 }
 
 // ------------------------------- Second Slide ----------------------
 
-.carousel-secend-container h2 {
-  @extend .carousel_public_header;
-  top: 100px;
-
-  &::after {
-    @extend .underHeaderRedStrip;
-  }
-}
-
-.carousel-secend-container .about-flex-container > li {
-  width: 33.33%;
+.carousel-secend-container
+.about-flex-container > li {
+  width: 50%;
   text-align: left;
-  font-size: 20px;
+  font-size: $font-large;
 }
 
 .download-resume-carousel {
   @extend .download-resume;
-    color: black;
-    position: absolute;
-    left: 80px;
-    top: 80px;
-    width: 300px;
-    margin-left: 50%;
-    border: 1px solid black;
+  position: absolute;
+  left: 80px;
+  top: 80px;
+  width: 300px;
+  color: black;
+  margin-left: 50%;
+  border: 1px solid black;
 }
 
-// ------------------------------- Third Slide  ----------------------
-.carousel-third-container h2 {
-  @extend .carousel_public_header;
-  top: 100px;
-  
-  &::after {
-    @extend .underHeaderRedStrip;
-  }
+// ------------------------------- Third Slide ----------------------
+.carousel-third-container .about-flex-container li{
+  flex: 1;
 }

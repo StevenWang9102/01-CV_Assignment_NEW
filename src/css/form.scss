@@ -1,36 +1,38 @@
+// --------------------------------- Public ------------------------------
 #form-section
 {
   position: relative;
   top: 1200px;
   height: 600px;
-  // border: 2px solid yellow;
 }
 
 .public-information-section {
   position: absolute;
-  // display: inline-block;
   height: 580px;
-  padding: 30px;
-  margin: 0;
-  border-top: 5px solid rgba(128, 128, 128, 0.24);
+  padding: 40px;
   color: white;
-  background: #314a74;
-  font-size: 15px;
+  border-top: 5px solid rgba(128, 128, 128, 0.24);
+  font-size: $font-small;
 }
 
 .information-section-left {
   @extend .public-information-section;
-  top: 0px;
+  background: $dark-blue;
 }
 
 .information-section-right {
   @extend .public-information-section;
-  display: inline-block;
-  background: #bcc8dc;
+  background: $basic-blue;
 }
 
-// When screen size < 900px
+#form-section form {
+  position: relative;
+  left: 35px;
+  top: 110px;
+}
+
 @media only screen and (max-width: 900px) {
+  // When screen size < 900px
   .public-information-section {
     width: 450px;
   }
@@ -40,8 +42,8 @@
   }
 }
 
-// When screen size > 900px
 @media only screen and (min-width: 900px) {
+  // When screen size > 900px
   .public-information-section {
     width: 50%;
   }
@@ -49,100 +51,92 @@
   {
     left: 50%
   }
-
 }
 
-
-
-.information-section-left h2 {
-  @extend .skills-header-public;
-  color: white;
-  left: 4%;
+.information-header-public {
+  position: relative;
+  top: 78px;
+  font-size: $font-extra-large;
+  
   &::after  {
     @extend .underHeaderRedStrip;
   }
+}
+
+.information-section-left h2 {
+  @extend .information-header-public;
+  color: white;
+  left: 4%;
 }
 
 .information-section-right h2 {
-  @extend .skills-header-public;
-  left: 35px;
+  @extend .information-header-public;
   color: black;
-  &::after  {
-    @extend .underHeaderRedStrip;
-  }
+  left: 35px;
 }
 
-.table-left {
+// --------------------------------- Lift Form ------------------------------
+.information-table-left {
   position: relative;
   left: 4%;
   top: 120px;
 }
 
-.information-section-left a {
-  color: white;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.table-left th {
-  font-size: 20px;
+.information-table-left th {
+  font-size: $font-large;
   width: 40%;
 }
 
-.input-textarea {
-  border-bottom: 1px solid black;
-  background-color: #bcc8dc;
-  font-size: 16px;
-  line-height: 2.5;
-  position: relative;
-  left: 0;
-}
-
-.information-section-right textarea{
-  position: absolute;
-  top: 100px;
-  left: 5px;
-  // border: 2px solid blue;
-}
-
-.information-section-right button {
-  background-color: #bcc8dc;
+.information-section-left a {
   color: white;
-  border: 0 solid #555555;
-  font-size: 18px;
-  font-weight: 700;
-  width: 140px;
-  position: absolute;
-  top: 230px;
-  left: 140px;
-  line-height: 2.5;
-  cursor: pointer;
-}
-
-.submit-button:hover {
-  color: #314a74;
+  font-size: $font-small;
+  text-decoration: none;
 }
 
 
-.information-section-right div:nth-child(1),.information-section-right div:nth-child(2){
+// --------------------------------- Right Form ------------------------------
+.information-section-right div:nth-child(1),
+.information-section-right div:nth-child(2){
     display: inline-block;
 }
 
-.information-section-right input::-webkit-input-placeholder, .information-section-right textarea::-webkit-input-placeholder
+.information-section-right .input-textarea {
+  position: relative;
+  left: 0;
+  font-size: $font-small;
+  border-bottom: 1px solid black;
+  background-color: $basic-blue;
+  line-height: 2.5;
+}
+
+.information-section-right textarea{
+  position: relative;
+  top: 20px;
+  left: 5px;
+}
+
+.information-section-right button {
+  position: relative;
+  top: 30px;
+  left: 135px;
+  height: 30px;
+  width: 120px;
+  color: white;
+  font-size: $font-large;
+  font-weight: 700;
+  opacity: 0.8;
+  background-color: $basic-blue;
+  border: 0 solid $basic-blue;
+  border-radius: 20px;
+
+  &:hover{
+    color: $dark-blue;
+    transition: ease .5s;
+  }
+}
+
+.information-section-right input::-webkit-input-placeholder, 
+.information-section-right textarea::-webkit-input-placeholder
 {
-  // font-weight: 4200;
   color: gray;
-}
-
-section td {
-  line-height: 2;
-}
-
-input {
-  font-size: 13px;
-}
-
-::placeholder {
-  color: black;
 }

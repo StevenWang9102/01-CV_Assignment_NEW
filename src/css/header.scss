@@ -4,35 +4,58 @@
   left: 0;
   height: 600px;
   width: 100%;
-  // border: 5px solid greenyellow;
+}
+
+.home-btn {
+  position: fixed;
+  left: 40px;
+  top: 63px;
+  color: white;
+  font-size: $font-large;
+  font-weight: bold;
+  float: left;
+  z-index: 300;
+
+  &:hover {
+    color: $basic-blue;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.download-resume-top {
+  @extend .download-resume;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 300;
 }
 
 .author-hearder {
   position: absolute;
   top: 200px;
   left: 50%;
-  transform: translateX(-50%);  
+  transform: translateX(-50%);
   width: 600px;
   color: white;
   text-align: center;
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 500;
   letter-spacing: 5px;
 
-  & span{
+  & span {
     position: absolute;
     top: 90px;
     width: 400px;
     left: 50%;
-    transform: translateX(-50%);  
+    transform: translateX(-50%);
     font-size: 25px;
     font-weight: 300;
-    // border: 2px solid greenyellow;
     color: $basic-blue;
-    }
+  }
 }
 
- .author-img  {
+.author-img {
   position: absolute;
   left: 50%;
   top: 480px;
@@ -44,37 +67,10 @@
   transform: translateX(-50%);
 }
 
-
 #upper-background img {
   position: absolute;
   height: 1200px;
   width: 100%;
   object-fit: cover;
   z-index: -200;
-}
-
-
-.download-resume-top {
-  @extend .download-resume;
-  position: fixed;
-  top: 50px;
-  right: 50px;
-  z-index: 300;
-}
-
-.home-btn {
-  position: fixed;
-  left: 40px;
-  top: 63px;
-  color: white;
-  font-size: $font-l;
-  font-weight: bold;
-  float: left;
-  z-index: 300;
-
-  &:hover {
-    color: $basic-blue;
-    text-decoration: none;
-    cursor: pointer;
-  }
 }

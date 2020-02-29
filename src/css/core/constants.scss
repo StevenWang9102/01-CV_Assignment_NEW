@@ -1,18 +1,25 @@
-// colors
-$black: #070a0e;
-$grey: rgba(7, 10, 14, 0.55);
-$cyan: #bbc8dd;
-$dark-cyan: #94a3ba;
-$navy: #2e4975;
-$red: #df3143;
-$white: #ffffff;
+// ------------- Templet Color ---------------
 
-// font sizes
-$font-xs: 13px;
-$font-s: 15px;
-$font-m: 17px;
-$font-l: 20px;
-$font-xl: 38px;
+
+// ------------- My Color ---------------
+$basic-white: #ffffff;
+$basic-blue: #bbc8dd;
+$basic-blue-dark: #8295b3;
+$dark-blue: #314a74;
+
+$basic-grey: #edeff5;
+$basic-grey-dark: rgba(7, 10, 14, 0.55);
+$basic-black: rgb(20, 20, 24);
+
+$dark-red: #d93347;
+$light-blue: rgb(75, 156, 231);
+
+// ------------- Font Size ---------------
+$font-extra-small: 14px;
+$font-small: 16px;
+$font-middle: 18px;
+$font-large: 20px;
+$font-extra-large: 30px;
 
 // font family: https://ant.design/docs/spec/font#Font-Family
 $font-family-content: -apple-system, BlinkMacSystemFont, 'Segoe UI',

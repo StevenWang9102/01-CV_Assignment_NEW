@@ -1,115 +1,85 @@
-@import './core/constants';
-@import './core/mixins';
-
-#footer-section{
-    position: relative;
-    top: 1180px;
-    height: 220px;
-    width: 100%;
-    border-top: 2px solid rgb(25, 26, 24) ;
-    background-color: $basic-grey;
+// ----------------------- General ---------------
+#footer-section {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  top: 1180px;
+  height: 180px;
+  width: 100%;
+  border-top: 3px solid rgb(25, 26, 24);
+  background-color: $basic-grey;
 }
 
-.footer-left-container p{
-    position: absolute;
-    left:80px;
-}
-
-// 屏幕小于900px的情况
 @media only screen and (max-width: 900px) {
-    .footer-left-container {
-      width: 450px;
-    }
-    .footer-social-media
-    {
-      left: 450px;
-    }
+  // when screen < 900px
+  .footer-left-container {
+    width: 450px;
   }
-  
-  // 屏幕大于900px的情况
-  @media only screen and (min-width: 900px) {
-    .footer-left-container {
-      width: 50%;
-    }
-    .footer-social-media
-    {
-      left: 50%
-    }
+  .footer-social-media {
+    left: 450px;
   }
+}
 
+@media only screen and (min-width: 900px) {
+  // when screen > 900px
+  .footer-left-container {
+    width: 50%;
+  }
+  .footer-social-media {
+    left: 50%;
+  }
+}
+
+// ------------------------- Left footer -----------------------
 .download-resume-bottom {
-    @extend .download-resume;
-    color: black;
-    position: absolute;
-    left: 80px;
-    top: 80px;
-    z-index: 300;
-    &:after {
-        background-color: rgb(51, 44, 33);
-    }
-  }
+  @extend .download-resume;
+  position: absolute;
+  left: 80px;
+  top: 60px;
+  color: black;
+  z-index: 300;
+}
+
+.footer-left-container p {
+  position: absolute;
+  left: 80px;
+  bottom: 27px;
+  font-size: $font-extra-small;
+}
+
+// ------------------------- Right footer -----------------
+.footer-social-media p {
+  position: absolute;
+  bottom: 27px;
+  width: 250px;
+  margin-left: 90px;
+  font-size: $font-extra-small;
+}
+
+.footer-social-media ul {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 68px;
+  margin-left: 90px;
+}
+
+.footer-social-media ul > li {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.footer-social-media img {
+  height: 30px;
+  width: 30px;
+  border-radius: 15%;
+  z-index: 200;
   
-#footer-section div:nth-child(1) p {
-    font-size: 14px;
-    position: absolute;
-    bottom: 27px;
-}
-
-
-.footer-social-media p{
-    position: absolute;
-    bottom: 27px;
-    width: 250px;   
-    display: block; 
-    margin-left: 90px;
-}
-
-#footer-section{
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-#footer-section div:nth-child(1){
-    height: 100%;
-    // border: 2px solid rgb(211, 156, 156);
-}
-
-#footer-section div:nth-child(1) a {
-    position: absolute;
-    right: 0;
-;}
-
-
-#footer-section div:nth-child(2){
-    height: 100%;
-}
-
-.footer-social-media img
-{
-    height: 30px;
-    width: 30px;
-    border-radius: 5%;
-    z-index: 200;
-}
-
-.footer-social-media ul{
-    display: flex;
-    flex-wrap: nowrap;
-    position: absolute;
-    margin-left: 90px;
-    top: 89px;
-}
-
-.footer-social-media ul >li{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 20px;
-    background-color: indigo;
-}
-
-main
-{
-    // border: 3px solid red;
-    height: 100%;
+  &:hover{
+    width: 32px;
+    height: 32px;
+    transform: translateY(-5%);  
+  }
 }
