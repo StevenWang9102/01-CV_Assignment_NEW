@@ -3,11 +3,14 @@ Introduction
 
     This website is a responsive website. You can try it out!
 
+How to work?
+    run "npm start" in VS code terminal
+
 Functions
 
 - this website only displays some of my CV information therefore practice mainly css skills like position, flex, sass and box model.
 - this website is a responsive web according to different screen sizes
-- I use carousel with some Bootstrap code
+- carousel with some Bootstrap code
 - my website includes some jQuery code to control “page turning”
 
 Source Code
