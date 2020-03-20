@@ -1,3 +1,8 @@
+Introduction
+    this website is simply displaying some of my CV information. I try to practice skills that I have learned including flex, box model, bootstrap, position and so on. 
+
+    This website is a responsive website. You can try it out!
+
 Functions
 
 - this website only displays some of my CV information therefore practice mainly css skills like position, flex, sass and box model.
