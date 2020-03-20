@@ -3,7 +3,7 @@
 
     This website is a responsive website. You can try it out!
 
-<!-- How to work? -->
+<!-- How it works? -->
     run "npm start" in VS code terminal
 
 <!-- Functions -->
