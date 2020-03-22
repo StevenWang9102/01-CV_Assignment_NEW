@@ -2,7 +2,7 @@
   "name": "cv-assignment",
   "description": "The code practice of a CV website",
   "scripts": {
-    "build": "parcel build src/index.html",
+    "build": "run-script build",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:js": "eslint ./src/js",
     "lint:css": "stylelint './src/css/**/*.scss'",
