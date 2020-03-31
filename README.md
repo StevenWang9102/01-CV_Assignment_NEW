@@ -5,7 +5,10 @@
 
 <!-- How it works? -->
     run "npm start" in VS code terminal.
-    You can also watch project videos on my personal website.(https://stevenwangakl.wixsite.com/myprojects)
+    
+    You can also watch project videos on my personal website.(https://stevenwangakl.wixsite.com/myprojects).
+    
+    You can play with it on my hosted website online (http://cv-assignment-show.s3-website-ap-southeast-2.amazonaws.com).
 
 <!-- Functions -->
     - this website only displays some of my CV information therefore practice mainly css skills like position, flex, sass and box model.
