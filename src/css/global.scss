@@ -11,11 +11,13 @@ main {
 }
 
 body {
+  position: relative;
   overflow-x: hidden;
   font-size: $font-middle;
   font-family: $font-family-content;
   font-family: sans-serif, Arial, Helvetica;
   line-height: 1.2;
+  background-color: #edeff5;
 }
 
 * {

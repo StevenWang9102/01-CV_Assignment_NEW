@@ -1,37 +1,16 @@
-// ----------------------- General ---------------
 #footer-section {
   display: flex;
   flex-wrap: nowrap;
   position: relative;
-  top: 1180px;
+  top: -25px;
   height: 180px;
   width: 100%;
   border-top: 3px solid rgb(25, 26, 24);
   background-color: $basic-grey;
 }
 
-@media only screen and (max-width: 900px) {
-  // when screen < 900px
-  .footer-left-container {
-    width: 450px;
-  }
-  .footer-social-media {
-    left: 450px;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  // when screen > 900px
-  .footer-left-container {
-    width: 50%;
-  }
-  .footer-social-media {
-    left: 50%;
-  }
-}
-
 // ------------------------- Left footer -----------------------
-.download-resume-bottom {
+#footer-section .download-resume-bottom {
   @extend .download-resume;
   position: absolute;
   left: 80px;
@@ -62,24 +41,44 @@
   position: absolute;
   top: 68px;
   margin-left: 90px;
+
+  & li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  & img {
+    height: 30px;
+    width: 30px;
+    border-radius: 15%;
+    z-index: 200;
+    
+    &:hover{
+      width: 32px;
+      height: 32px;
+      transform: translateY(-5%);  
+    }
+  }
 }
 
-.footer-social-media ul > li {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 20px;
+
+// ----------------------- Media Query -------------------
+@media only screen and (max-width: 900px) {
+  .footer-left-container {
+    width: 450px;
+  }
+  .footer-social-media {
+    left: 450px;
+  }
 }
 
-.footer-social-media img {
-  height: 30px;
-  width: 30px;
-  border-radius: 15%;
-  z-index: 200;
-  
-  &:hover{
-    width: 32px;
-    height: 32px;
-    transform: translateY(-5%);  
+@media only screen and (min-width: 900px) {
+  .footer-left-container {
+    width: 50%;
+  }
+  .footer-social-media {
+    left: 50%;
   }
 }

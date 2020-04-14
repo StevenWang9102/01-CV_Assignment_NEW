@@ -2,8 +2,14 @@
 #form-section
 {
   position: relative;
-  top: 1200px;
+  top: 0;
   height: 600px;
+
+  & form {
+    position: relative;
+    left: 35px;
+    top: 110px;
+  }
 }
 
 .public-information-section {
@@ -25,31 +31,25 @@
   background: $basic-blue;
 }
 
-#form-section form {
-  position: relative;
-  left: 35px;
-  top: 110px;
-}
-
-@media only screen and (max-width: 900px) {
-  // When screen size < 900px
-  .public-information-section {
-    width: 450px;
-  }
-  .information-section-right
-  {
-    left: 450px;
-  }
-}
 
 @media only screen and (min-width: 900px) {
-  // When screen size > 900px
   .public-information-section {
     width: 50%;
   }
   .information-section-right
   {
     left: 50%
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .public-information-section,
+  .information-section-right {
+    width: 450px;
+  }
+  .information-section-right
+  {
+    left: 450px;
   }
 }
 
@@ -76,13 +76,13 @@
 }
 
 // --------------------------------- Lift Form ------------------------------
-.information-table-left {
+.information-section-left table {
   position: relative;
   left: 4%;
   top: 120px;
 }
 
-.information-table-left th {
+.information-section-left table th {
   font-size: $font-large;
   width: 40%;
 }
@@ -100,7 +100,9 @@
     display: inline-block;
 }
 
-.information-section-right .input-textarea {
+.information-section-right input,
+.information-section-right textarea
+ {
   position: relative;
   left: 0;
   font-size: $font-small;
@@ -138,5 +140,5 @@
 .information-section-right input::-webkit-input-placeholder, 
 .information-section-right textarea::-webkit-input-placeholder
 {
-  color: gray;
+  color: white;
 }

@@ -2,11 +2,11 @@
 
 #skills-section {
   position: relative;
-  top: 1200px;
+  top: 0;
   height: 730px;
-}
 
-#skills-section img {
+
+& img {
   position: absolute;
   top: 0;
   width: 100%;
@@ -15,7 +15,7 @@
   z-index: -200;
 }
 
-#skills-section h2 {
+& h2 {
   position: absolute;
   top: 78px;
   font-size: $font-extra-large;
@@ -25,6 +25,7 @@
   &::after  {
     @extend .underHeaderRedStrip;
   }
+}
 }
 
 .skill-wrapper-box {
@@ -44,31 +45,31 @@
 
 // ------------------------- Skills ------------------------
 
-.skill-upper-1 {
+.skill-wrapper-box li:nth-child(1){
   height: 145px;
   background-color: $basic-grey;
   font-size: 100%;
 }
 
-.skill-upper-2 {
+.skill-wrapper-box li:nth-child(2){
   height: 145px;
   background-color: $basic-blue;
   font-size: 100%;
 }
 
-.skill-upper-3{
+.skill-wrapper-box li:nth-child(3){
   height: 215px;
   font-size: 140%;
   background-color: $basic-blue;
 }
 
-.skill-upper-4 {
+.skill-wrapper-box li:nth-child(4){
   height: 440px;
   font-size: 200%;
   background-color: $basic-blue;
 }
 
-.skill-lower-1 {
+.skill-wrapper-box li:nth-child(5){
   position: absolute;
   top: 145px;
   height: 295px;
@@ -77,7 +78,7 @@
   background-color: $basic-grey;
 }
 
-.skill-lower-2 {
+.skill-wrapper-box li:nth-child(6){
   position: absolute;
   top: 215px;
   left: 35%;
@@ -88,7 +89,6 @@
 }
 
 @media only screen and (max-width: 900px) {
-  // when screen < 900px
   .skill-wrapper-box {
     left: 10%;
     width: 760px;
@@ -98,26 +98,26 @@
     left: 10%;
   }
 
-  .skill-upper-1,
-  .skill-upper-2 {
+  .skill-wrapper-box li:nth-child(1),
+  .skill-wrapper-box li:nth-child(2) {
     flex: 1;
   }
 
-  .skill-upper-3{
+  .skill-wrapper-box li:nth-child(3){
     flex: 1.5;
   }
 
-  .skill-upper-4 {
+  .skill-wrapper-box li:nth-child(4){
     flex: 3;
     height: 415px;
   }
 
-  .skill-lower-1 {
+  .skill-wrapper-box li:nth-child(5){
     width: 293px;
     height: 270px;
   }
 
-  .skill-lower-2 {
+  .skill-wrapper-box li:nth-child(6){
     position: absolute;
     left:293px;
     height: 200px;
@@ -126,7 +126,6 @@
 }
 
 @media only screen and (min-width: 900px) {
-  // when screen > 900px
   .skill-wrapper-box {
     width: 960px;
     left: 15%;
@@ -138,24 +137,24 @@
     left: 15%;
   }
 
-  .skill-upper-1,
-  .skill-upper-2 {
+  .skill-wrapper-box li:nth-child(1),
+  .skill-wrapper-box li:nth-child(2) {
     flex: 1;
   }
 
-  .skill-upper-3{
+  .skill-wrapper-box li:nth-child(3){
     flex: 1.5;
   }
 
-  .skill-upper-4 {
+  .skill-wrapper-box li:nth-child(4){
     flex: 3;
   }
 
-  .skill-lower-1 {
+  .skill-wrapper-box li:nth-child(5){
     width: 326px;
   }
 
-  .skill-lower-2 {
+  .skill-wrapper-box li:nth-child(6){
     position: absolute;
     left: 326px;
     width: 225px;
