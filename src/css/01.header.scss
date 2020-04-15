@@ -4,18 +4,18 @@
 
   & h1 {
     position: fixed;
+    float: left;
     left: 40px;
     top: 63px;
     color: white;
     font-size: $font-large;
     font-weight: bold;
-    float: left;
-    z-index: 300;
+    z-index: 30;
 
     &:hover {
+      cursor: pointer;
       color: $basic-blue;
       text-decoration: none;
-      cursor: pointer;
     }
   }
 }
@@ -32,12 +32,12 @@
     top: 200px;
     left: 50%;
     transform: translateX(-50%);
+    text-align: center;
+    letter-spacing: 5px;
     width: 600px;
     color: white;
-    text-align: center;
     font-size: 60px;
     font-weight: 500;
-    letter-spacing: 5px;
 
     & span {
       position: absolute;
@@ -57,26 +57,25 @@
   position: fixed;
   top: 50px;
   right: 50px;
-  z-index: 300;
+  z-index: 30;
 }
 
 #header-background img {
   position: absolute;
-  left: 50%;
   top: 480px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 250px;
   height: 250px;
   border-radius: 250px;
-  border: 10px solid white;
-  z-index: 300;
-  transform: translateX(-50%);
+  z-index: 30;
 }
 
 .upper-background img {
   position: relative;
   top: 0;
+  object-fit: cover;
   height: 1200px;
   width: 100%;
-  object-fit: cover;
-  z-index: -200;
+  z-index: -20;
 }

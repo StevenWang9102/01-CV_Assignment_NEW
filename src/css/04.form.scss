@@ -1,36 +1,24 @@
-// --------------------------------- Public ------------------------------
 #form-section
 {
   position: relative;
   top: 0;
-  height: 600px;
+  height: 620px;
 
   & form {
     position: relative;
-    left: 35px;
     top: 110px;
+    left: 5%;
   }
 }
 
 .public-information-section {
   position: absolute;
-  height: 580px;
+  height: 620px;
   padding: 40px;
   color: white;
-  border-top: 5px solid rgba(128, 128, 128, 0.24);
   font-size: $font-small;
+  border-top: 5px solid rgba(128, 128, 128, 0.24);
 }
-
-.information-section-left {
-  @extend .public-information-section;
-  background: $dark-blue;
-}
-
-.information-section-right {
-  @extend .public-information-section;
-  background: $basic-blue;
-}
-
 
 @media only screen and (min-width: 900px) {
   .public-information-section {
@@ -63,82 +51,97 @@
   }
 }
 
-.information-section-left h2 {
-  @extend .information-header-public;
-  color: white;
-  left: 4%;
-}
-
-.information-section-right h2 {
-  @extend .information-header-public;
-  color: black;
-  left: 35px;
-}
-
 // --------------------------------- Lift Form ------------------------------
-.information-section-left table {
-  position: relative;
-  left: 4%;
-  top: 120px;
-}
+.information-section-left {
+  @extend .public-information-section;
+  background: $dark-blue;
 
-.information-section-left table th {
-  font-size: $font-large;
-  width: 40%;
-}
+  & h2 {
+    @extend .information-header-public;
+    color: white;
+    left: 5%;
+  }
 
-.information-section-left a {
-  color: white;
-  font-size: $font-small;
-  text-decoration: none;
-}
+  & table {
+    position: relative;
+    left: 5%;
+    top: 120px;
+  }
 
+  & table th {
+    width: 40%;
+    font-size: $font-large;
+  }
 
-// --------------------------------- Right Form ------------------------------
-.information-section-right div:nth-child(1),
-.information-section-right div:nth-child(2){
-    display: inline-block;
-}
-
-.information-section-right input,
-.information-section-right textarea
- {
-  position: relative;
-  left: 0;
-  font-size: $font-small;
-  border-bottom: 1px solid black;
-  background-color: $basic-blue;
-  line-height: 2.5;
-}
-
-.information-section-right textarea{
-  position: relative;
-  top: 20px;
-  left: 5px;
-}
-
-.information-section-right button {
-  position: relative;
-  top: 30px;
-  left: 135px;
-  height: 30px;
-  width: 120px;
-  color: white;
-  font-size: $font-large;
-  font-weight: 700;
-  opacity: 0.8;
-  background-color: $basic-blue;
-  border: 0 solid $basic-blue;
-  border-radius: 20px;
-
-  &:hover{
-    color: $dark-blue;
-    transition: ease .5s;
+  & a {
+    color: white;
+    font-size: $font-small;
+    text-decoration: none;
   }
 }
 
-.information-section-right input::-webkit-input-placeholder, 
-.information-section-right textarea::-webkit-input-placeholder
-{
-  color: white;
+// --------------------------------- Right Form ------------------------------
+.information-section-right{
+  @extend .public-information-section;
+  background: $basic-blue;
+
+  & h2 {
+    @extend .information-header-public;
+    position: relative;
+    left: 5%;
+    color: black;
+  }
+
+  & form{
+    position: relative;
+    left: 5%;
+  }
+  
+  & div:nth-child(1),
+  div:nth-child(2){
+    display: inline-block;
+  }
+
+  & input, textarea
+  {
+    position: relative;
+    left: 0;
+    font-size: $font-small;
+    line-height: 2.5;
+    border-bottom: 1px solid black;
+    background-color: $basic-blue;
+  }
+    
+  & textarea{
+    position: relative;
+    top: 20px;
+    left: 5px;
+  }
+
+  & input::-webkit-input-placeholder, 
+  textarea::-webkit-input-placeholder
+  {
+    color: white;
+  }
+
+  & button {
+    position: relative;
+    top: 30px;
+    left: 135px;
+    height: 30px;
+    width: 120px;
+    color: white;
+    font-size: $font-large;
+    font-weight: 700;
+    opacity: 0.8;
+    background-color: $basic-blue;
+    border: 0 solid $basic-blue;
+    border-radius: 20px;
+
+    &:hover{
+      color: $dark-blue;
+      transition: ease .5s;
+    }
+  }
 }
+
